@@ -10,7 +10,7 @@ body {
 }
 
 #content {
-	flex-basis: 940px;
+	flex-basis: 800px;
 	flex-shrink: 1;
 	background-color: #eee;
 	min-height: 80px;
