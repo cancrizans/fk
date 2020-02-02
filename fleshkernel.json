@@ -1,0 +1,38 @@
+{
+	"imgpath":"pic/",
+	"entries": [
+		{
+			"prefix":"tnc/",
+			"code":"fc",
+			"title":"Fresh Corn",
+			"img": ["pg00_04_redo_0.png","pg00_04_redo_1.png","pg00_04_redo_2.png","pg00_04_redo_3.png"]
+		},
+		{
+			"prefix":"tnc/",
+			"code":"tnc_tc",
+			"title":"Terms & Conditions - Title Card",
+			"img": ["pg04.png"]
+		},
+		{
+			"code":"tnc_2",
+			"title":"Terms & Conditions - 2",
+			"img" : ["pg05.png"],
+			"prefix":"tnc/"
+		},
+		{
+			"code":"tnc_3",
+			"title":"Terms & Conditions - 3",
+			"img" : ["pg06_0.png","pg06_1.png"],
+			"prefix":"tnc/"
+		},
+		{
+			"code":"tnc_4",
+			"title":"Terms & Conditions - 4",
+			"img" : ["pg07_0.png","pg07_1.png"],
+			"prefix":"tnc/"
+
+		}
+
+
+	]
+}

@@ -1,0 +1,26 @@
+body {
+	background-color: #111;
+	margin:0px;
+}
+
+#page {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+#content {
+	flex-basis: 940px;
+	flex-shrink: 1;
+	background-color: #eee;
+	min-height: 80px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.comicpic {
+	width: 100%;
+	min-height: 800px;
+}
+
