@@ -16,6 +16,15 @@
 
                 <template id="entrytemplate">
                     <div class="entry">
+                        <div class="entryimgcontainer"></div>
+
+                        <div class="entrylabel">
+                            <div class="entrylabeltext"></div>
+
+                        </div>
+                        <div class="entryinfo">
+                            <div class="entrytitle"></div>
+                        </div>
                     </div>
                 </template>
 
@@ -29,16 +38,16 @@
         var queryParams = (new URL(document.location)).searchParams;
         var wantedComic = queryParams.get('c');
 
-       
+
 
 
         $.ajaxSetup({
             beforeSend: function(xhr){
               if (xhr.overrideMimeType)
                 xhr.overrideMimeType("application/json");
-            },
-            error:function() { alert("error");  }
-        });
+        },
+        error:function() { alert("error");  }
+    });
 
 
 
@@ -70,14 +79,14 @@
             var subImageIndex = 0;
 
             var entryTemplate = $("#entrytemplate").html().trim();
-            console.log(entryTemplate);
+            
 
             var entryData;
             var entryDiv;
+            var entryImgContainer;
 
             function loadMoreContent(){
 
-                console.log(loadedIndex,subImageIndex);
 
 
                 if(loadedIndex < webcomic.entries.length){
@@ -87,8 +96,27 @@
                         entryData = webcomic.entries[loadedIndex];
 
                         entryDiv = $(entryTemplate);
+                        entryImgContainer = entryDiv.find(".entryimgcontainer");
+                        var entryInfo = entryDiv.find(".entryinfo");
+                        var entryButton = entryDiv.find(".entrylabel");
+
+                        entryButton.click(
+                            function() {
+                                console.log(entryInfo[0].scrollHeight);
+                                if (entryInfo.css("max-height") === "0px") 
+                                  entryInfo.css("max-height", entryInfo[0].scrollHeight +"px");
+                                else 
+                                  entryInfo.css("max-height", "0px");
+                          }
+                          );
+
+                        //populate entry
+                        entryDiv.find(".entrylabeltext").text(entryData.code);
                         
+                        entryDiv.find(".entrytitle").text(entryData.title);
+
                         entryDiv.appendTo(comicDiv);
+
                     }
 
                     //if spilled over post length, reset to start of next and re-call function
@@ -109,7 +137,7 @@
 
 
                     img.attr('src',url);
-                    img.appendTo(entryDiv);
+                    img.appendTo(entryImgContainer);
 
                     subImageIndex += 1;   
 

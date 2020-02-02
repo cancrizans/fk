@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Source+Code+Pro&display=swap');
+
 body {
 	background-color: #111;
 	margin:0px;
@@ -12,12 +14,63 @@ body {
 #content {
 	flex-basis: 800px;
 	flex-shrink: 1;
-	background-color: #eee;
+
 	min-height: 80px;
 
 	display: flex;
 	flex-direction: column;
 }
+
+.entry {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+
+}
+
+.entrylabel{
+
+
+	font-family: 'Source Code Pro', monospace;
+
+	color: #000;
+
+	position: absolute;
+	bottom: -15px;
+	right: -70px;
+	width: 60px;
+	height: 30px;
+
+	background-color: #eee;
+	border-radius: 5px;
+	
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.entryinfo {
+	background-color: #222;
+	max-height: 0px;
+	color:#eee;
+
+	overflow: hidden;
+
+	transition: max-height 0.2s ease-out;
+
+	border-radius: 0px 0px 30px 30px;
+	
+}
+
+.entrytitle {
+
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 30px;
+    padding: 30px;
+}
+
+
 
 .comicpic {
 	width: 100%;
