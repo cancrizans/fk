@@ -22,7 +22,10 @@
 
                         </div>
                         <div class="entryinfo">
-                            <div class="entrytitle"></div>
+                            <div class="entryinfopanel">
+                                <div class="entrytitle"></div>
+                                <div class="permalink"></div>
+                            </div>
                         </div>
                     </div>
                 </template>
@@ -36,6 +39,8 @@
 
         var queryParams = (new URL(document.location)).searchParams;
         var wantedComic = queryParams.get('c');
+
+        var baseURL = window.location.href.split('?')[0];
 
 
 
@@ -99,9 +104,10 @@
                         var entryInfo = entryDiv.find(".entryinfo");
                         var entryButton = entryDiv.find(".entrylabel");
 
+
                         entryButton.click(
                             function() {
-                                console.log(entryInfo[0].scrollHeight);
+                                
                                 if (entryInfo.css("max-height") === "0px") 
                                   entryInfo.css("max-height", entryInfo[0].scrollHeight +"px");
                                 else 
@@ -113,6 +119,11 @@
                         entryDiv.find(".entrylabeltext").text(entryData.code);
                         
                         entryDiv.find(".entrytitle").text(entryData.title);
+
+
+                        var permalink = baseURL + "?c=" + entryData.code;
+                        entryInfo.find(".permalink").text(permalink);
+
 
                         entryDiv.appendTo(comicDiv);
 
