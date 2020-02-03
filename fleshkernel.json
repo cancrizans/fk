@@ -118,17 +118,26 @@
 
 		},				{
 			"code":"tnc_17",
-			"title":"Terms & Conditions - 18",
+			"title":"Terms & Conditions - 17",
 			"img" : ["pg21_0.png","pg21_1.png"],
 			"prefix":"tnc/"
 
 		},
 		{
 			"code":"tnc_18",
-			"title":"Terms & Conditions - 19",
+			"title":"Terms & Conditions - 18",
 			"img" : ["pg22_0.png","pg22_1.png"],
 			"prefix":"tnc/"
 
+		},
+		{
+			"type": "breather"
+		},
+		{
+			"code":"tnc_19",
+			"title":"Terms & Conditions - 19",
+			"img": ["01.png"],
+			"prefix":"tnc/"
 		}
 	]
 }

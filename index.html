@@ -12,6 +12,19 @@
     <div id="page">
         <div id="content">
 
+            <img src="img/banner.gif" class="titlebanner">
+
+            <div id="resumereading">
+                <div class="resumetext"></div>
+
+            </div>
+
+            <noscript>
+                <div id="noscript">
+                    Error: your browser can't do javascript or you have it disabled. I can't show you my comic without it!
+                </div>
+            </noscript>
+
             <div id="comic">
 
                 <template id="entrytemplate">
@@ -29,6 +42,13 @@
                             </div>
                         </div>
                     </div>
+                </template>
+
+                <template id="breathertemplate">
+                    <div class="entry">
+                        <div class="gonextpage"><div class="gonexttext">Continue to </div><div class="nextpagetitle"></div></div>
+                    </div>
+
                 </template>
 
             </div>
@@ -71,27 +91,39 @@
 
             var comicDiv = $("#comic");
 
+            var wasFound = false;
 
             var loadedIndex = 0;
             if(wantedComic !=null){
-                for(var wantedIndex = 0; wantedIndex<webcomic.entries.length; wantedIndex++){
+                for(var wantedIndex = 1; wantedIndex<webcomic.entries.length; wantedIndex++){
                     if(webcomic.entries[wantedIndex].code == wantedComic){
                         loadedIndex = wantedIndex;
+                        wasFound = true;
+                        break;
                     }
                 }
             }
 
+            if(wasFound){
+                $(".resumetext").html(`You are reading starting from "${webcomic.entries[loadedIndex].title}".`)
+            }
+            else
+                $("#resumereading").remove();
+
             var subImageIndex = 0;
 
             var entryTemplate = $("#entrytemplate").html().trim();
-            
+            var breatherTemplate = $("#breathertemplate").html().trim();
 
             var entryData;
             var entryDiv;
             var entryImgContainer;
 
-            function loadMoreContent(){
+            var stopLoad = false;
 
+            function loadMoreContent(){
+                if(stopLoad)
+                    return false;
 
 
                 if(loadedIndex < webcomic.entries.length){
@@ -100,21 +132,26 @@
                     {
                         entryData = webcomic.entries[loadedIndex];
 
-                        entryDiv = $(entryTemplate);
-                        entryImgContainer = entryDiv.find(".entryimgcontainer");
-                        var entryInfo = entryDiv.find(".entryinfo");
-                        var entryButton = entryDiv.find(".entrylabel");
+                        if(!('type' in entryData)) //comic post
+                        {
+
+                            
+
+                            entryDiv = $(entryTemplate);
+                            entryImgContainer = entryDiv.find(".entryimgcontainer");
+                            var entryInfo = entryDiv.find(".entryinfo");
+                            var entryButton = entryDiv.find(".entrylabel");
 
 
-                        entryButton.click(
-                            function() {
-                                
-                                if (entryInfo.css("max-height") === "0px") 
-                                  entryInfo.css("max-height", entryInfo[0].scrollHeight +"px");
-                                else 
-                                  entryInfo.css("max-height", "0px");
-                          }
-                          );
+                            entryButton.click(
+                                function() {
+
+                                    if (entryInfo.css("max-height") === "0px") 
+                                      entryInfo.css("max-height", entryInfo[0].scrollHeight +"px");
+                                  else 
+                                      entryInfo.css("max-height", "0px");
+                              }
+                              );
 
                         //populate entry
                         entryDiv.find(".entrylabeltext").text(entryData.code);
@@ -127,8 +164,22 @@
 
 
                         entryDiv.appendTo(comicDiv);
-
                     }
+                    else if(entryData.type == "breather"){
+                        stopLoad = true;
+                        entryDiv = $(breatherTemplate);
+
+                        entryDiv.find(".nextpagetitle").text(webcomic.entries[loadedIndex+1].title);
+                        entryDiv.appendTo(comicDiv);
+                        entryDiv.click(function(){
+                            window.location = baseURL + '?c=' + webcomic.entries[loadedIndex+1].code;
+                        });
+                    }
+                    else{
+                        console.log(entryData);
+                        return true;
+                    }
+                }
 
                     //if spilled over post length, reset to start of next and re-call function
                     if(subImageIndex>= entryData.img.length){
@@ -169,10 +220,10 @@
             }
 
             $(window).scroll(function () { 
-               if ($(window).scrollTop() >= $("#page").height() - $(window).height() - 200) {
-                 loadMoreContent();
-             }
-         });
+             if ($(window).scrollTop() >= $("#page").height() - $(window).height() - 200) {
+               loadMoreContent();
+           }
+       });
 
         };
 
