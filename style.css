@@ -77,3 +77,11 @@ body {
 	min-height: 800px;
 }
 
+
+.loading {
+  background: transparent url('img/egg.gif') center no-repeat;
+}
+
+.entryimgcontainer{
+	background-color: black;
+}
