@@ -1,6 +1,65 @@
 {
 	"imgpath":"pic/",
 	"entries": [
+		{	"prefix":"sf/",
+			"code":"sf_tc",
+			"title":"Slow Food - Title Card",
+			"img": ["animatedtc.gif"]
+		},
+		{	"prefix":"sf/",
+			"code":"sf_1",
+			"title":"Slow Food - 1",
+			"img": ["000.png"]
+		},
+		{	"prefix":"sf/",
+			"code":"sf_2",
+			"title":"Slow Food - 2",
+			"img": ["001.png","002.png","003.png","004.png","005.png"]
+		},
+		{	"prefix":"sf/",
+			"code":"sf_3",
+			"title":"Slow Food - 3",
+			"img": ["006.png"]
+		},
+		{	"prefix":"sf/",
+			"code":"sf_4",
+			"title":"Slow Food - 4",
+			"img": ["007.png"]
+		},
+		{	"prefix":"sf/",
+			"code":"sf_5",
+			"title":"Slow Food - 5",
+			"img": ["008_0.png","008_1.png"]
+		},
+		{	"prefix":"sf/",
+			"code":"sf_6",
+			"title":"Slow Food - 6",
+			"img": ["009_0.png","009_1.png","009_2.png"]
+		},
+		{	"prefix":"sf/",
+			"code":"sf_7",
+			"title":"Slow Food - 7",
+			"img": ["010.png","011.png"]
+		},
+		{
+			"type":"breather"
+		},
+		{	"prefix":"as/tapas_",
+			"code":"as",
+			"title":"Intermezzo: Alleyway Stickup",
+			"img": ["0.png","1.png","2.png"]
+		},
+		{
+			"type":"breather"
+		},
+		{	"prefix":"sf/",
+			"code":"sf_8",
+			"title":"Slow Food - 8",
+			"img": ["012.png","013.png","014.png"]
+		},
+		{
+			"type":"breather"
+		},
 		{
 			"prefix":"tnc/",
 			"code":"fc",
