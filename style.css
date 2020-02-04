@@ -104,8 +104,23 @@ img.titlebanner{
 	background-color: black;
 }
 
+.permalinkrow {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
 .permalink {
 	font-family: 'Source Code Pro', monospace;
+	margin-right:8px;
+}
+
+.permalinkicon {
+	margin:2px;
+}
+
+.hidden {
+	display: none;
 }
 
 .gonextpage{
@@ -122,4 +137,12 @@ img.titlebanner{
 .nextpagetitle{
 	font-size:30px;
 	margin: 10px;
+}
+
+
+.seeya{
+	margin:50px 30px 50px 30px;
+	font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40px;
+    text-align: center;
 }

@@ -38,7 +38,11 @@
                         <div class="entryinfo">
                             <div class="entryinfopanel">
                                 <div class="entrytitle"></div>
-                                <div class="permalink"></div>
+                                <div class="permalinkrow">
+                                    <div class="permalink"></div>
+                                    <img src="img/clipboard.svg" class="permalinkicon copyclipboard">
+                                    <img src="img/check.svg" class="permalinkicon copyclipboardcheck hidden">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -49,6 +53,10 @@
                         <div class="gonextpage"><div class="gonexttext">Continue to </div><div class="nextpagetitle"></div></div>
                     </div>
 
+                </template>
+
+                <template id="seeyatemplate">
+                    <div class="seeya">Mark the date: the next episode will be up next Friday!</div>
                 </template>
 
             </div>
@@ -135,7 +143,7 @@
                         if(!('type' in entryData)) //comic post
                         {
 
-                            
+
 
                             entryDiv = $(entryTemplate);
                             entryImgContainer = entryDiv.find(".entryimgcontainer");
@@ -161,7 +169,16 @@
 
                         var permalink = baseURL + "?c=" + entryData.code;
                         entryInfo.find(".permalink").text(permalink);
-
+                        var check = entryInfo.find(".copyclipboardcheck");
+                        entryInfo.find(".copyclipboard").click(function()
+                        {
+                            navigator.clipboard.writeText(permalink).then( function()
+                            {
+                                check.removeClass("hidden");
+                            }
+                            );
+                        }
+                        );
 
                         entryDiv.appendTo(comicDiv);
                     }
@@ -211,7 +228,13 @@
                     return true;
                 }
                 else
+                {
+                    //end of comic
+                    $($("#seeyatemplate").html().trim()).appendTo(comicDiv);
+                    stopLoad=true;
+
                     return false;
+                }
             }
 
 
@@ -220,12 +243,14 @@
             }
 
             $(window).scroll(function () { 
-             if ($(window).scrollTop() >= $("#page").height() - $(window).height() - 200) {
-               loadMoreContent();
-           }
-       });
+               if ($(window).scrollTop() >= $("#page").height() - $(window).height() - 200) {
+                 loadMoreContent();
+             }
+         });
 
         };
+
+
 
 
 
