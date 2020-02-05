@@ -12,7 +12,17 @@
     <div id="page">
         <div id="content">
 
+            <div id="menu">
+                <div class="menuentry"><a href="?">First</a></div>
+                <div class="menuentry">Latest</div>
+                <div class="menuentry">Archive</div>
+                <div class="menuentry"><a href="https://www.instagram.com/cancrizans.canon/">Art</a></div>
+                <div class="menuentry">Cast</div>
+                <div class="menuentry"><a href="https://tscomix.fandom.com/wiki/Flesh_Kernel">Wiki</a></div>
+            </div>
+
             <img src="img/banner.gif" class="titlebanner">
+
 
             <div id="resumereading">
                 <div class="resumetext"></div>
@@ -59,6 +69,14 @@
                     <div class="seeya">Mark the date: the next episode will be up next Friday!</div>
                 </template>
 
+            </div>
+
+
+            <div id="loadmorecontainer">
+                <div id="loadmorebutton">
+                    <img src="img/arrow-down.svg">
+                    <div id="loadmoretext">Load more comics</div>
+                </div>
             </div>
 
         </div>
@@ -113,7 +131,7 @@
             }
 
             if(wasFound){
-                $(".resumetext").html(`You are reading starting from "${webcomic.entries[loadedIndex].title}".`)
+                $(".resumetext").html(`You are reading starting from "${webcomic.entries[loadedIndex].title}". <a href="?">Go back to the beginning</a>.`)
             }
             else
                 $("#resumereading").remove();
@@ -129,9 +147,17 @@
 
             var stopLoad = false;
 
+            function stopLoading(){
+
+                stopLoad = true;
+
+                $("#loadmorecontainer").addClass("hidden");
+            }
+
             function loadMoreContent(){
                 if(stopLoad)
                     return false;
+
 
 
                 if(loadedIndex < webcomic.entries.length){
@@ -183,7 +209,7 @@
                         entryDiv.appendTo(comicDiv);
                     }
                     else if(entryData.type == "breather"){
-                        stopLoad = true;
+                        stopLoading();
                         entryDiv = $(breatherTemplate);
 
                         entryDiv.find(".nextpagetitle").text(webcomic.entries[loadedIndex+1].title);
@@ -191,6 +217,8 @@
                         entryDiv.click(function(){
                             window.location = baseURL + '?c=' + webcomic.entries[loadedIndex+1].code;
                         });
+
+                        return false;
                     }
                     else{
                         console.log(entryData);
@@ -231,7 +259,8 @@
                 {
                     //end of comic
                     $($("#seeyatemplate").html().trim()).appendTo(comicDiv);
-                    stopLoad=true;
+
+                    stopLoading();
 
                     return false;
                 }
@@ -242,12 +271,18 @@
                 loadMoreContent();
             }
 
-            $(window).scroll(function () { 
-               if ($(window).scrollTop() >= $("#page").height() - $(window).height() - 200) {
-                 loadMoreContent();
+            $(window).scroll(
+                function () 
+                { 
+                   if ($(window).scrollTop() >= $("#page").height() - $(window).height() - 200)
+                   {
+                     loadMoreContent();
+                 }
              }
-         });
+             );
 
+
+            $("#loadmorebutton").click( loadMoreContent);
         };
 
 

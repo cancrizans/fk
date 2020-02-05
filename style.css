@@ -4,6 +4,8 @@ body {
 	background-color: #111;
 	margin:0px;
 	color:#eee;
+
+	--accent-col: #D8484D;
 }
 
 #page {
@@ -26,9 +28,26 @@ body {
 
 img.titlebanner{
 	width: 100%;
-	margin: 20px 0px 20px 0px;
+	margin: 10px 0px 20px 0px;
 }
 
+
+#menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin:10px;
+}
+
+.menuentry{
+	text-align: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 20px;
+}
+
+a{
+	color:var(--accent-col);
+}
 
 #resumereading{
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -145,4 +164,30 @@ img.titlebanner{
 	font-family: 'Open Sans Condensed', sans-serif;
     font-size: 40px;
     text-align: center;
+}
+
+
+
+#loadmorecontainer{
+	text-align: center;
+	margin: 10px;
+}
+
+#loadmorebutton{
+	background-color: #eee;
+    color:#222;
+    display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#loadmoretext{
+	font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40px;
+    text-align: center;
+
 }
