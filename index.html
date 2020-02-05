@@ -14,7 +14,7 @@
 
             <div id="menu">
                 <div class="menuentry"><a href="?">First</a></div>
-                <div class="menuentry">Latest</div>
+                <div class="menuentry"><a href="?" id="latestlink">Latest</a></div>
                 <div class="menuentry">Archive</div>
                 <div class="menuentry"><a href="https://www.instagram.com/cancrizans.canon/">Art</a></div>
                 <div class="menuentry">Cast</div>
@@ -117,6 +117,8 @@
 
             var comicDiv = $("#comic");
 
+
+            //find desired comic by query
             var wasFound = false;
 
             var loadedIndex = 0;
@@ -136,6 +138,20 @@
             else
                 $("#resumereading").remove();
 
+
+            //find latest comic
+            var lastCode = "";
+            for(var i = webcomic.entries.length-1; i>=0; i--){
+                if(!("type" in webcomic.entries[i])){
+                    lastCode = webcomic.entries[i].code;
+                    break;
+                }
+
+            }
+            
+            $("#latestlink").attr("href",`?c=${lastCode}`);
+
+
             var subImageIndex = 0;
 
             var entryTemplate = $("#entrytemplate").html().trim();
@@ -154,6 +170,21 @@
                 $("#loadmorecontainer").addClass("hidden");
             }
 
+            function isComic(entry){
+                return !('type' in entry);
+            }
+
+            function nextComic(index){
+
+                for(var i = index+1; i<webcomic.entries.length;i++)
+                {
+                    if(isComic(webcomic.entries[i]))
+                        return i;
+                }
+
+                return null;
+            }
+
             function loadMoreContent(){
                 if(stopLoad)
                     return false;
@@ -166,7 +197,7 @@
                     {
                         entryData = webcomic.entries[loadedIndex];
 
-                        if(!('type' in entryData)) //comic post
+                        if(isComic(entryData)) //comic post
                         {
 
 
@@ -180,10 +211,12 @@
                             entryButton.click(
                                 function() {
 
-                                    if (entryInfo.css("max-height") === "0px") 
+                                    if (entryInfo.css("max-height") === "0px") {
                                       entryInfo.css("max-height", entryInfo[0].scrollHeight +"px");
-                                  else 
+                                  }
+                                  else {
                                       entryInfo.css("max-height", "0px");
+                                  }
                               }
                               );
 
@@ -212,13 +245,23 @@
                         stopLoading();
                         entryDiv = $(breatherTemplate);
 
-                        entryDiv.find(".nextpagetitle").text(webcomic.entries[loadedIndex+1].title);
+                        var nextInd = nextComic(loadedIndex);
+
+                        if(nextInd == null)
+                            return false;
+
+                        var next = webcomic.entries[nextInd];
+
+                        entryDiv.find(".nextpagetitle").text(next.title);
                         entryDiv.appendTo(comicDiv);
                         entryDiv.click(function(){
-                            window.location = baseURL + '?c=' + webcomic.entries[loadedIndex+1].code;
+                            window.location = baseURL + '?c=' + next.code;
                         });
 
                         return false;
+                    }
+                    else if(entryData.type == "chapter"){
+
                     }
                     else{
                         console.log(entryData);
@@ -227,7 +270,7 @@
                 }
 
                     //if spilled over post length, reset to start of next and re-call function
-                    if(subImageIndex>= entryData.img.length){
+                    if( (!isComic(entryData) || subImageIndex>= entryData.img.length)  ){
                         subImageIndex = 0;
                         loadedIndex += 1;
 
