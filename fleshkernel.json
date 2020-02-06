@@ -1,10 +1,91 @@
 {
 	"imgpath":"pic/",
 	"entries": [
+
 		{
 			"type":"chapter",
 			"title":"Road Trip"
 		},
+		{
+			"prefix":"rt/",
+			"code":"rt_tc",
+			"title": "Road Trip - Title Card",
+			"img": ["tc.png"]
+		},
+		{
+			"prefix":"rt/0",
+			"code":"rt_1",
+			"title": "Road Trip - 1",
+			"img": ["00.png","01.png","02.png","03.png","04.png","05.png","06.png","07.png","08.png"]
+		},
+		{
+			"prefix":"rt/0",
+			"code":"rt_2",
+			"title": "Road Trip - 2",
+			"img": ["09.png","10.png","11.png","12.png","13.png","14.png","15.png","16.png"]
+		},
+		{
+			"prefix":"rt/0",
+			"code":"rt_3",
+			"title": "Road Trip - 3",
+			"img": ["17.png","18.png","19.png","20.png","21.png"]
+		},
+		{
+			"prefix":"rt/0",
+			"code":"rt_4",
+			"title": "Road Trip - 4",
+			"img": ["22.png","23.png","24.png","25.png","26.png","27.png"]
+		},
+		{
+			"prefix":"rt/0",
+			"code":"rt_5",
+			"title": "Road Trip - 5",
+			"img": ["28.png","29.png","30.png","31.png","32.png","33.png"]
+		},
+		{
+			"prefix":"rt/0",
+			"code":"rt_6",
+			"title": "Road Trip - 6",
+			"img": ["34.png","35.png","36.png","37.png","38.png","39.png"]
+		},
+		{
+			"prefix":"rt/0",
+			"code":"rt_7",
+			"title": "Road Trip - 7",
+			"img": ["40.png","41.png","42.png","43.png","44.png","45.png","46.png","47.png","48.png","49.png","50.png","51.png"]
+		},
+		{
+			"prefix":"rt/0",
+			"code":"rt_8",
+			"title": "Road Trip - 8",
+			"img": ["52.png","53.png","54.png","55.png","56.png","57.png","58.png"]
+		},
+		{
+			"type": "breather"
+		},
+
+		{
+			"prefix":"bp/",
+			"code":"bp",
+			"title":"Backpack",
+			"img":["tc_fat.png","000.png","001.png","002.png","003.png"]
+		},
+
+		{
+			"type":"breather"
+		},
+
+		{
+			"prefix":"gss/",
+			"code":"gss",
+			"title":"Gods of the Solar System",
+			"img":["000gnrth.png","001laika.png","002neil.png"]
+		},
+
+		{
+			"type":"breather"
+		},
+
 		{
 			"type":"chapter",
 			"title":"Slow Food"
@@ -91,9 +172,24 @@
 			"img": ["0.png","1.png","2.png"]
 		},
 		{	"prefix":"sf/",
-			"code":"sf_13",
-			"title":"Slow Food - 13",
+			"code":"sf_14",
+			"title":"Slow Food - 14",
 			"img": ["023.png","024.png"]
+		},
+		{	"prefix":"sf/",
+			"code":"sf_15",
+			"title":"Slow Food - 15",
+			"img": ["025_0.png","025_1.png"]
+		},
+		{	"prefix":"sf/pg2",
+			"code":"sf_16",	
+			"title":"Slow Food - 16",
+			"img": ["6.png","7.png","8.png","9.png"]
+		},
+		{	"prefix":"sf/",
+			"code":"sf_add",
+			"title":"Slow Food - Addendum",
+			"img": ["outro.png"]
 		},
 		{
 			"type":"breather"
