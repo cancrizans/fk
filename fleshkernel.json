@@ -4,7 +4,10 @@
 
 		{
 			"type":"chapter",
-			"title":"Road Trip"
+			"title":"Road Trip",
+			"date":"November 2018",
+			"img": "ar_rt.png"
+
 		},
 		{
 			"prefix":"rt/",
@@ -88,7 +91,11 @@
 
 		{
 			"type":"chapter",
-			"title":"Slow Food"
+			"title":"Slow Food",
+			"date":"January 2019",
+			"img": "ar_sf.png"
+
+
 		},
 		{	"prefix":"sf/",
 			"code":"sf_tc",
@@ -196,7 +203,9 @@
 		},
 		{
 			"type":"chapter",
-			"title":"Terms & Conditions"
+			"title":"Terms & Conditions",
+			"date":"June 2019",
+			"img":"ar_tnc.png"
 		},
 		{
 			"prefix":"tnc/",
@@ -353,6 +362,12 @@
 			"title":"Terms & Conditions - 22",
 			"img": ["0.png","1.png","2.png","3.png","4.png","5.png"],
 			"prefix":"tnc/08_10_part_"
+		},
+		{
+			"code":"tnc_23",
+			"title":"Terms & Conditions - 23",
+			"img": ["0.png","1.png","2.png","3.png"],
+			"prefix":"tnc/011_012_"
 		}
 	]
 }

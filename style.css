@@ -22,6 +22,8 @@ body {
 
 	display: flex;
 	flex-direction: column;
+
+	max-width: 940px;
 }
 
 
@@ -49,10 +51,62 @@ a{
 	color:var(--accent-col);
 }
 
+
+#pitch{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 30px;	
+	text-align: center;
+	margin: 70px;
+}
+
+.paragraph{
+
+	font-family: 'Source Code Pro', monospace;
+	margin: 10px;
+
+}
+
+.separator{
+	height: 200px;
+}
+
+.emphasis{
+	color:var(--accent-col);
+
+}
+
+.chapterarchive{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.chapterpic {
+	flex-shrink: 0;
+}
+
+.chapterarchiveside{
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.chapterarchivetitle{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size:30px;
+}
+
+.chapterarchivelinks{
+	font-family: 'Source Code Pro', monospace;
+	font-size:15px;
+}
+
+
 #resumereading{
 	font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 20px;
-    margin:20px;
+	font-size: 20px;
+	margin:20px;
 }
 
 .entry {
@@ -60,6 +114,20 @@ a{
 	flex-direction: column;
 	position: relative;
 
+}
+
+.chapterstarttitle{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 60px;
+	text-align: center;
+	margin:20px 0px 10px 0px; 
+}
+
+.chapterdate{
+	font-family: 'Source Code Pro', monospace;
+	font-size: 20px;
+	margin-bottom: 20px;
+	text-align: center;
 }
 
 .entrylabel{
@@ -102,9 +170,9 @@ a{
 
 .entrytitle {
 
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 30px;
-    
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 30px;
+
 }
 
 
@@ -116,7 +184,7 @@ a{
 
 
 .loading {
-  background: transparent url('img/egg.gif') center no-repeat;
+	background: transparent url('img/egg.gif') center no-repeat;
 }
 
 .entryimgcontainer{
@@ -144,11 +212,11 @@ a{
 
 .gonextpage{
 	font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 20px;
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+	font-size: 20px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 	align-items: center;
 	margin:20px;
 }
@@ -162,8 +230,8 @@ a{
 .seeya{
 	margin:50px 30px 50px 30px;
 	font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 40px;
-    text-align: center;
+	font-size: 40px;
+	text-align: center;
 }
 
 
@@ -175,8 +243,8 @@ a{
 
 #loadmorebutton{
 	background-color: #eee;
-    color:#222;
-    display: inline-flex;
+	color:#222;
+	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: row;
@@ -187,7 +255,7 @@ a{
 
 #loadmoretext{
 	font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 40px;
-    text-align: center;
+	font-size: 40px;
+	text-align: center;
 
 }

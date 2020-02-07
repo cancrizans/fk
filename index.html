@@ -13,15 +13,36 @@
         <div id="content">
 
             <div id="menu">
-                <div class="menuentry"><a href="?">First</a></div>
+                <div class="menuentry"><a href="?">Home</a></div>
                 <div class="menuentry"><a href="?" id="latestlink">Latest</a></div>
-                <div class="menuentry">Archive</div>
                 <div class="menuentry"><a href="https://www.instagram.com/cancrizans.canon/">Art</a></div>
                 <div class="menuentry">Cast</div>
                 <div class="menuentry"><a href="https://tscomix.fandom.com/wiki/Flesh_Kernel">Wiki</a></div>
             </div>
 
             <img src="img/banner.gif" class="titlebanner">
+
+            <div id="homepage" class="hidden">
+                <div id="pitch">Earth was invaded by aliens... 300 years ago. The dead God of Rebirth exploits a shared subconscious channel to contact a human, an alien, and a human-alien hybrid to retrieve an object of cosmic potential known as the <span class="emphasis">Flesh Kernel</span>.</div>
+
+                <div class="paragraph">Flesh Kernel is a webcomic by <a href="https://cancrizans.github.io/">cancrizans</a>. You can choose from the archives here or just scroll further down to start reading from the beginning.</div>
+                
+                <div id="archive">
+                    <template id="chapterarchive">
+                        <div class="chapterarchive">
+                            <img class="chapterpic">
+                            <div class="chapterarchiveside">
+                                <div class="chapterarchivetitle"></div>
+                                <div class="chapterarchivelinks"></div>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+
+                <div class="separator"></div>
+
+
+            </div>
 
 
             <div id="resumereading">
@@ -67,6 +88,14 @@
 
                 <template id="seeyatemplate">
                     <div class="seeya">Mark the date: the next episode will be up next Friday!</div>
+                </template>
+
+                <template id="chapterstarttemplate">
+                    <div class="entry">
+                        <div class="chapterstarttitle">
+                        </div>
+                        <div class="chapterdate"></div>
+                    </div>
                 </template>
 
             </div>
@@ -136,7 +165,45 @@
                 $(".resumetext").html(`You are reading starting from "${webcomic.entries[loadedIndex].title}". <a href="?">Go back to the beginning</a>.`)
             }
             else
+            {
                 $("#resumereading").remove();
+                //home page
+                $(".titlebanner").addClass("hidden");
+                $("#homepage").removeClass("hidden");
+
+                var chapterTemplate = $("#homepage").find("#chapterarchive").html().trim();
+                var archiveDiv = $("#archive");
+                var chapDiv;
+                var chapLinksDiv;
+
+                var flipChap = false;
+                var chapNum = 1;
+
+                for(var e of webcomic.entries){
+                    if(e.type=="chapter"){
+                        var roman = ["0","I","II","III","IV","V","VI","VII","VIII","IX","X"][chapNum]; 
+
+                        chapDiv = $(chapterTemplate);
+                        chapDiv.find(".chapterarchivetitle").text(roman+" "+e.title);
+                        chapDiv.find(".chapterpic").attr("src","pic/"+e.img);
+                        chapDiv.appendTo(archiveDiv);
+                        chapLinksDiv = chapDiv.find(".chapterarchivelinks");
+
+
+                        if(flipChap){
+                            chapDiv.children().each(function(i,c){chapDiv.prepend(c)});
+                        }
+                        flipChap = !flipChap;
+
+                        chapNum++;
+                    }
+                    else if (isComic(e)){
+                        chapLinksDiv.append(`<a href="?c=${e.code}">${e.code}</a> `);
+                    }
+                }
+
+
+            }
 
 
             //find latest comic
@@ -156,6 +223,7 @@
 
             var entryTemplate = $("#entrytemplate").html().trim();
             var breatherTemplate = $("#breathertemplate").html().trim();
+            var chapterStartTemplate = $("#chapterstarttemplate").html().trim();
 
             var entryData;
             var entryDiv;
@@ -193,15 +261,12 @@
 
                 if(loadedIndex < webcomic.entries.length){
 
-                    if(subImageIndex == 0) // new entry
+                    if(subImageIndex == 0) 
                     {
                         entryData = webcomic.entries[loadedIndex];
 
-                        if(isComic(entryData)) //comic post
+                        if(isComic(entryData)) 
                         {
-
-
-
                             entryDiv = $(entryTemplate);
                             entryImgContainer = entryDiv.find(".entryimgcontainer");
                             var entryInfo = entryDiv.find(".entryinfo");
@@ -209,68 +274,73 @@
 
 
                             entryButton.click(
-                                function() {
+                                              function() 
+                                              {
+                                                if (entryInfo.css("max-height") === "0px") 
+                                                  entryInfo.css("max-height", entryInfo[0].scrollHeight +"px");
+                                              else 
+                                                  entryInfo.css("max-height", "0px");
+                                          });
 
-                                    if (entryInfo.css("max-height") === "0px") {
-                                      entryInfo.css("max-height", entryInfo[0].scrollHeight +"px");
-                                  }
-                                  else {
-                                      entryInfo.css("max-height", "0px");
-                                  }
-                              }
-                              );
+                            entryDiv.find(".entrylabeltext").text(entryData.code);
 
-                        //populate entry
-                        entryDiv.find(".entrylabeltext").text(entryData.code);
-                        
-                        entryDiv.find(".entrytitle").text(entryData.title);
+                            entryDiv.find(".entrytitle").text(entryData.title);
 
 
-                        var permalink = baseURL + "?c=" + entryData.code;
-                        entryInfo.find(".permalink").text(permalink);
-                        var check = entryInfo.find(".copyclipboardcheck");
-                        entryInfo.find(".copyclipboard").click(function()
-                        {
-                            navigator.clipboard.writeText(permalink).then( function()
+                            var permalink = baseURL + "?c=" + entryData.code;
+                            entryInfo.find(".permalink").text(permalink);
+                            var check = entryInfo.find(".copyclipboardcheck");
+                            entryInfo.find(".copyclipboard").click(function()
                             {
-                                check.removeClass("hidden");
+                                navigator.clipboard.writeText(permalink).then( function()
+                                {
+                                    check.removeClass("hidden");
+                                }
+                                );
                             }
                             );
+
+                            entryDiv.appendTo(comicDiv);
                         }
-                        );
+                        else if(entryData.type == "breather"){
+                            stopLoading();
+                            entryDiv = $(breatherTemplate);
 
-                        entryDiv.appendTo(comicDiv);
-                    }
-                    else if(entryData.type == "breather"){
-                        stopLoading();
-                        entryDiv = $(breatherTemplate);
+                            var nextInd = nextComic(loadedIndex);
 
-                        var nextInd = nextComic(loadedIndex);
+                            if(nextInd == null)
+                                return false;
 
-                        if(nextInd == null)
+                            var next = webcomic.entries[nextInd];
+
+                            entryDiv.find(".nextpagetitle").text(next.title);
+                            entryDiv.appendTo(comicDiv);
+                            entryDiv.click(function()
+                            {
+                                window.location = baseURL + '?c=' + next.code;
+                            }
+                            );
+
                             return false;
+                        }
+                        else if(entryData.type == "chapter"){
+                            
+                            entryDiv = $(chapterStartTemplate);
+                            entryDiv.find(".chapterstarttitle").text(entryData.title);
+                            entryDiv.find(".chapterdate").text(entryData.date);
+                            entryDiv.appendTo(comicDiv);
+                            
 
-                        var next = webcomic.entries[nextInd];
-
-                        entryDiv.find(".nextpagetitle").text(next.title);
-                        entryDiv.appendTo(comicDiv);
-                        entryDiv.click(function(){
-                            window.location = baseURL + '?c=' + next.code;
-                        });
-
-                        return false;
+                        }
+                        else{
+                            console.log(entryData);
+                            return true;
+                        }
                     }
-                    else if(entryData.type == "chapter"){
-
-                    }
-                    else{
-                        console.log(entryData);
-                        return true;
-                    }
-                }
 
                     //if spilled over post length, reset to start of next and re-call function
                     if( (!isComic(entryData) || subImageIndex>= entryData.img.length)  ){
+
                         subImageIndex = 0;
                         loadedIndex += 1;
 
@@ -315,14 +385,14 @@
             }
 
             $(window).scroll(
-                function () 
-                { 
-                   if ($(window).scrollTop() >= $("#page").height() - $(window).height() - 200)
-                   {
-                     loadMoreContent();
-                 }
-             }
-             );
+                             function () 
+                             { 
+                               if ($(window).scrollTop() >= $("#page").height() - $(window).height() - 200)
+                               {
+                                 loadMoreContent();
+                             }
+                         }
+                         );
 
 
             $("#loadmorebutton").click( loadMoreContent);
