@@ -28,6 +28,7 @@
                 <div class="paragraph">Flesh Kernel is a webcomic by <a href="https://cancrizans.github.io/">cancrizans</a>. You can choose from the archives here or just scroll further down to start reading from the beginning.</div>
                 
                 <div id="archive">
+                    <a name="archive"></a>
                     <template id="chapterarchive">
                         <div class="chapterarchive">
                             <img class="chapterpic">
@@ -162,7 +163,22 @@
             }
 
             if(wasFound){
-                $(".resumetext").html(`You are reading starting from "${webcomic.entries[loadedIndex].title}". <a href="?">Go back to the beginning</a>.`)
+
+                //find previous comic
+                var prev = null;
+                for(var i = loadedIndex-1; i>=0; i--){
+                    if(isComic(webcomic.entries[i])){
+                        prev = webcomic.entries[i];
+                        break;
+                    }
+                }
+
+                var extraString = "";
+                if(prev != null){
+                    extraString = `<a href="?c=${prev.code}">back to ${prev.title}</a> or `;
+                }
+
+                $(".resumetext").html(`You are reading starting from "${webcomic.entries[loadedIndex].title}". Go ${extraString}<a href="?">back to the archives</a>.`)
             }
             else
             {
