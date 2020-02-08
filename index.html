@@ -384,15 +384,18 @@
                 loadMoreContent();
             }
 
-            $(window).scroll(
-                             function () 
-                             { 
-                               if ($(window).scrollTop() >= $("#page").height() - $(window).height() - 200)
+
+
+            function checkOnScroll(){
+                    if ($(window).scrollTop() >= $("#page").height() - $(window).height() - 200)
                                {
                                  loadMoreContent();
                              }
-                         }
-                         );
+            }
+
+            $(window).scroll(checkOnScroll);
+
+            $("body").bind("touchmove",checkOnScroll);
 
 
             $("#loadmorebutton").click( loadMoreContent);
