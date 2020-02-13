@@ -327,13 +327,19 @@
                             if(nextInd == null)
                                 return false;
 
-                            var next = webcomic.entries[nextInd];
+                            var nextComicEntry = webcomic.entries[nextInd];
 
-                            entryDiv.find(".nextpagetitle").text(next.title);
+                            if(loadedIndex>=webcomic.entries.length)
+                                return false;
+                            
+                            var nextEntry = webcomic.entries[loadedIndex+1];
+                            
+
+                            entryDiv.find(".nextpagetitle").text(nextComicEntry.title);
                             entryDiv.appendTo(comicDiv);
                             entryDiv.click(function()
                             {
-                                window.location = baseURL + '?c=' + next.code;
+                                window.location = baseURL + '?c=' + nextEntry.code;
                             }
                             );
 

@@ -6,8 +6,8 @@
 			"type":"chapter",
 			"title":"Road Trip",
 			"date":"November 2018",
-			"img": "ar_rt.png"
-
+			"img": "ar_rt.png",
+			"code":"rt"
 		},
 		{
 			"prefix":"rt/",
@@ -93,8 +93,8 @@
 			"type":"chapter",
 			"title":"Slow Food",
 			"date":"January 2019",
-			"img": "ar_sf.png"
-
+			"img": "ar_sf.png",
+			"code":"sf"
 
 		},
 		{	"prefix":"sf/",
@@ -205,7 +205,8 @@
 			"type":"chapter",
 			"title":"Terms & Conditions",
 			"date":"June 2019",
-			"img":"ar_tnc.png"
+			"img":"ar_tnc.png",
+			"code":"tnc"
 		},
 		{
 			"prefix":"tnc/",
