@@ -416,9 +416,10 @@
             }
 
             $(window).scroll(checkOnScroll);
-
             $(window).bind("touchmove",checkOnScroll);
-
+            $(document).on("scrollstop", checkOnScroll);
+            $(document).on("scrollstop", checkOnScroll);
+            $(document).on("scroll",checkOnScroll);
 
             $("#loadmorebutton").click( loadMoreContent);
         };
