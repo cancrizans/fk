@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Source+Code+Pro&display=swap');
 
 body {
+	font-family: 'Open Sans Condensed', sans-serif;
 	background-color: #111;
 	margin:0px;
 	color:#eee;
@@ -88,25 +89,31 @@ a{
 	flex-direction: row;
 }
 
+.chapterpiccontainer {
+    flex: 0 0 50%;
+}
+
 .chapterpic {
-	flex-shrink: 0;
+	width: 100%;
 }
 
 .chapterarchiveside{
-	flex-grow: 1;
+    flex: 0 0 50%;
 	display: flex;
 	flex-direction: column;
-	padding: 20px;
+	
 }
 
 .chapterarchivetitle{
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size:30px;
+	margin:10px;
 }
 
 .chapterarchivelinks{
 	font-family: 'Source Code Pro', monospace;
 	font-size:18px;
+	margin:0px 10px 0px 10px;
 }
 
 
@@ -157,6 +164,25 @@ a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+	.entrylabel{
+		right: 0px;
+		z-index:1000;
+	}
+	.chapterarchivelinks{
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 600px){
+		.chapterarchivelinks{
+		font-size: 10px;
+	}
+	.chapterarchivetitle{
+		font-size: 20px;
+	}
 }
 
 .entryinfo {
