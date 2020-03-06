@@ -375,6 +375,12 @@
 			"title":"Terms & Conditions - 24",
 			"prefix":"tnc/13_",
 			"img":["0.png","1.png","2.png"]
+		},
+		{
+			"code":"tnc_25",
+			"title":"Terms & Conditions - 25",
+			"prefix":"tnc/",
+			"img":["014.png"] 
 		}
 	]
 }
