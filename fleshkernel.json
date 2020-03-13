@@ -381,6 +381,13 @@
 			"title":"Terms & Conditions - 25",
 			"prefix":"tnc/",
 			"img":["014.png"] 
+		},
+		{
+			"code":"tnc_26",
+			"title":"Terms & Conditions - 26",
+			"prefix":"tnc/015_016_",
+			"img":["0.png","1.png"],
+			"comment":"a bit of a mess here at home because of covid. Here's a life pro tip: don't be Italian"
 		}
 	]
 }

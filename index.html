@@ -3,6 +3,8 @@
  <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Flesh Kernel" />
+  <meta property="og:description" content="Aliens, Gods, Madness in the 24th century" />
   <title>Flesh Kernel</title> 
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -78,6 +80,7 @@
                                     <img src="img/clipboard.svg" class="permalinkicon copyclipboard">
                                     <img src="img/check.svg" class="permalinkicon copyclipboardcheck hidden">
                                 </div>
+                                <div class="entrycomment"></div>
                                 <div class="entrylinksrow"><a href="?">back to archive</a></div>
                             </div>
                         </div>
@@ -319,6 +322,10 @@
                                 );
                             }
                             );
+
+                            if('comment' in entryData){
+                                entryInfo.find(".entrycomment").text(entryData.comment);
+                            }
 
                             entryDiv.appendTo(comicDiv);
                         }
