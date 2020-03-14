@@ -259,6 +259,8 @@
                 stopLoad = true;
 
                 $("#loadmorecontainer").addClass("hidden");
+
+                console.log("stopped loading");
             }
 
             function isComic(entry){
@@ -276,17 +278,29 @@
                 return null;
             }
 
+            var loadTimeout = 400
+
             function loadMoreContent(){
                 if(stopLoad)
                     return false;
 
+                if(loadTimeout<0){
+                    console.log("woops... looks like I was caught in a loop.");
+                    return false;
+                }
+                loadTimeout --;
+                
 
 
                 if(loadedIndex < webcomic.entries.length){
 
+                    
+
                     if(subImageIndex == 0) 
                     {
                         entryData = webcomic.entries[loadedIndex];
+
+                        
 
                         if(isComic(entryData)) 
                         {
@@ -357,7 +371,7 @@
                             return false;
                         }
                         else if(entryData.type == "chapter"){
-                            
+
                             entryDiv = $(chapterStartTemplate);
                             entryDiv.find(".chapterstarttitle").text(entryData.title);
                             entryDiv.find(".chapterdate").text(entryData.date);
@@ -370,6 +384,9 @@
                             return true;
                         }
                     }
+
+                    if(stopLoad)
+                        return false;
 
                     //if spilled over post length, reset to start of next and re-call function
                     if( (!isComic(entryData) || subImageIndex>= entryData.img.length)  ){
@@ -414,16 +431,24 @@
 
 
             while($("#page").height() < $(window).height() + 200) {
-                loadMoreContent();
+                    if(stopLoad){
+
+                        break;
+                    }
+                    loadMoreContent();
             }
+            
 
 
 
             function checkOnScroll(){
+                if(!stopLoad){
                     if ($(window).scrollTop() >= $("#page").innerHeight() - $(window).height() - 200)
-                               {
-                                 loadMoreContent();
-                             }
+                    {
+                        
+                        loadMoreContent();
+                    }
+                }
             }
 
             $(window).scroll(checkOnScroll);
