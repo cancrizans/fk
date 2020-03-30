@@ -15,18 +15,23 @@
     <div id="page">
         <div id="content">
 
+
+            <img src="img/banner_recolour.gif" class="titlebanner">
+
+            <div class="barra"></div>
+
             <div id="menu">
-                <div class="menuentry"><a href="?">Home</a></div>
-                <div class="menuentry"><a href="?" id="latestlink">Latest</a></div>
-                <div class="menuentry"><a href="https://www.instagram.com/cancrizans.canon/">Art</a></div>
-                <div class="menuentry">Cast</div>
-                <div class="menuentry"><a href="https://tscomix.fandom.com/wiki/Flesh_Kernel">Wiki</a></div>
+                <div class="menuentry"><a href="?">home</a></div>
+                <div class="menuentry"><a href="?" id="latestlink">latest</a></div>
+                <div class="menuentry"><a href="https://www.instagram.com/cancrizans.canon/">art</a></div>
+                <div class="menuentry">cast</div>
+                <div class="menuentry"><a href="https://tscomix.fandom.com/wiki/Flesh_Kernel">wiki</a></div>
+                <div class="menuentry"><a href="https://cancrizans.github.io">cancrizans</a></div>
             </div>
 
-            <img src="img/banner.gif" class="titlebanner">
 
             <div id="homepage" class="hidden">
-                <div id="pitch">Earth was invaded by aliens... 300 years ago. The dead God of Rebirth exploits a shared subconscious channel to contact a human, an alien, and a human-alien hybrid to retrieve an object of cosmic potential known as the <span class="emphasis">Flesh Kernel</span>.</div>
+                <!-- <div id="pitch">Earth was invaded by aliens... 300 years ago. The dead God of Rebirth exploits a shared subconscious channel to contact a human, an alien, and a human-alien hybrid to retrieve an object of cosmic potential known as the <span class="emphasis">Flesh Kernel</span>.</div> -->
 
                 <div class="paragraph">Flesh Kernel is a webcomic by <a href="https://cancrizans.github.io/">cancrizans</a>. You can choose from the archives here or just scroll further down to start reading from the beginning.</div>
                 
@@ -189,9 +194,10 @@
             }
             else
             {
+
                 $("#resumereading").remove();
                 //home page
-                $(".titlebanner").addClass("hidden");
+                //$(".titlebanner").addClass("hidden");
                 $("#homepage").removeClass("hidden");
 
                 var chapterTemplate = $("#homepage").find("#chapterarchive").html().trim();
@@ -207,7 +213,7 @@
                         var roman = ["0","I","II","III","IV","V","VI","VII","VIII","IX","X"][chapNum]; 
 
                         chapDiv = $(chapterTemplate);
-                        chapDiv.find(".chapterarchivetitle").text(roman+" "+e.title);
+                        chapDiv.find(".chapterarchivetitle").text(roman+". "+e.title);
                         chapDiv.find(".chapterpic").attr("src","pic/"+e.img);
                         chapDiv.appendTo(archiveDiv);
                         chapLinksDiv = chapDiv.find(".chapterarchivelinks");
@@ -221,7 +227,7 @@
                         chapNum++;
                     }
                     else if (isComic(e)){
-                        chapLinksDiv.append(`<a href="?c=${e.code}">${e.code}</a> `);
+                        chapLinksDiv.append(`<a class="chapterarchivelink" href="?c=${e.code}">${e.code}</a> `);
                     }
                 }
 
