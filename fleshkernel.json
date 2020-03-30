@@ -388,6 +388,13 @@
 			"prefix":"tnc/015_016_",
 			"img":["0.png","1.png"],
 			"comment":"a bit of a mess here at home because of covid. Here's a life pro tip: don't be Italian"
+		},
+		{
+			"code":"tnc_27",
+			"title":"Terms & Conditions - 27",
+			"prefix":"tnc/",
+			"img":["017.png","018.png"],
+			"comment":"Posting is gonna be very irregular these days (well, weeks (months... ? crud)) for reasons you can imagine "
 		}
 	]
 }
