@@ -38,14 +38,16 @@
                 <div id="archive">
                     <a name="archive"></a>
                     <template id="chapterarchive">
-                        <div class="chapterarchive">
+
+                        <div class="chapterwrapper">
+
                             <div class="chapterpiccontainer">
                                 <img class="chapterpic">
                             </div>
-                            <div class="chapterarchiveside">
-                                <div class="chapterarchivetitle"></div>
-                                <div class="chapterarchivelinks"></div>
-                            </div>
+
+                            <div class="chapterarchivetitle"></div>
+                            <div class="chapterarchivelinks"></div>
+
                         </div>
                     </template>
                 </div>
@@ -213,15 +215,20 @@
                         var roman = ["0","I","II","III","IV","V","VI","VII","VIII","IX","X"][chapNum]; 
 
                         chapDiv = $(chapterTemplate);
+
                         chapDiv.find(".chapterarchivetitle").text(roman+". "+e.title);
+
+
                         chapDiv.find(".chapterpic").attr("src","pic/"+e.img);
+
                         chapDiv.appendTo(archiveDiv);
+                        
                         chapLinksDiv = chapDiv.find(".chapterarchivelinks");
 
 
-                        if(flipChap){
-                            chapDiv.children().each(function(i,c){chapDiv.prepend(c)});
-                        }
+                        //if(flipChap){
+                        //    chapDiv.children().each(function(i,c){chapDiv.prepend(c)});
+                        //}
                         flipChap = !flipChap;
 
                         chapNum++;
@@ -300,7 +307,7 @@
 
                 if(loadedIndex < webcomic.entries.length){
 
-                    
+
 
                     if(subImageIndex == 0) 
                     {
@@ -437,11 +444,11 @@
 
 
             while($("#page").height() < $(window).height() + 200) {
-                    if(stopLoad){
+                if(stopLoad){
 
-                        break;
-                    }
-                    loadMoreContent();
+                    break;
+                }
+                loadMoreContent();
             }
             
 
@@ -451,7 +458,7 @@
                 if(!stopLoad){
                     if ($(window).scrollTop() >= $("#page").innerHeight() - $(window).height() - 200)
                     {
-                        
+
                         loadMoreContent();
                     }
                 }

@@ -114,6 +114,20 @@ a{
 
 }
 
+#archive{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.chapterwrapper {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom:2em; 
+}
+
 .chapterarchive{
 	display: flex;
 	justify-content: center;
@@ -121,7 +135,8 @@ a{
 }
 
 .chapterpiccontainer {
-    flex: 0 0 50%;
+	width: 100%;
+    
 }
 
 .chapterpic {
@@ -143,9 +158,11 @@ a{
 }
 
 .chapterarchivelinks{
+	width: 100%;
 	font-family: var(--secondary-font);
 	font-weight: var(--secondary-font-weight);
 	font-size:18px;
+	text-align: center;
 	margin:0px 10px 0px 10px;
 }
 
