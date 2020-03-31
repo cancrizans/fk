@@ -69,8 +69,11 @@ for c in list(comics):
 	
 	Path(directory).mkdir(exist_ok=True)
 
+	if(not 'comment' in c):
+		c['comment'] = "A psychedelic sci-fi webcomic."
+
 	
-	page = template.replace("$TITLE$",c['title']).replace("$QCODE$","c="+c['code'])
+	page = template.replace("$TITLE$",c['title']).replace("$QCODE$","c="+c['code']).replace("$DESCRIPTION$",c['comment'])
 	
 	with open(directory + "/index.html",'w') as ff:
 		ff.write(page)
