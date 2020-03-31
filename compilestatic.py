@@ -62,6 +62,8 @@ with open('c/template.html','r') as f:
 	template = f.read()
 
 
+ABSOLUTEIMGPATH = 'https://cancrizans.github.io/fk/pic/'
+
 for c in list(comics):
 
 	
@@ -73,7 +75,9 @@ for c in list(comics):
 		c['comment'] = "A psychedelic sci-fi webcomic."
 
 	
-	page = template.replace("$TITLE$",c['title']).replace("$QCODE$","c="+c['code']).replace("$DESCRIPTION$",c['comment'])
+	image = ABSOLUTEIMGPATH + c['prefix'] + c['img'][0]
+
+	page = template.replace("$TITLE$",c['title']).replace("$QCODE$","c="+c['code']).replace("$DESCRIPTION$",c['comment']).replace("$IMAGE$",image)
 	
 	with open(directory + "/index.html",'w') as ff:
 		ff.write(page)
