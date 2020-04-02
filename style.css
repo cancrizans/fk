@@ -354,3 +354,42 @@ a{
 	text-align: center;
 
 }
+
+
+
+.clong{
+	margin: 2em;
+}
+
+.clongheader{
+	display: flex;
+	flex-direction: row;
+}
+
+.clongtitle{
+	font-family: var(--main-font);
+	font-weight: 400;
+	font-size: 2em;
+}
+
+.clongdesc{
+	font-family: var(--secondary-font);
+	font-weight: var(--secondary-font-weight);
+	font-size: 1.2em;
+}
+
+
+.member{
+	margin-top:2em;
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+}
+
+.castname{
+	font-family: var(--main-font);
+	font-weight: 400;
+	font-size: 2.5em;
+	margin-bottom:1em;
+}
+
