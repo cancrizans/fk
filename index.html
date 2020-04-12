@@ -264,7 +264,6 @@
             var entryImgContainer;
 
             var stopLoad = false;
-            var lastComment = null;
 
             function stopLoading(){
 
@@ -330,8 +329,6 @@
                                               else 
                                                   entryInfo.css("max-height", "0px");
                                           });
-
-                            lastComment = entryInfo;
 
                             entryDiv.find(".entrylabeltext").text(entryData.code);
 
@@ -436,8 +433,6 @@
                 {
                     //end of comic
                     $($("#seeyatemplate").html().trim()).appendTo(comicDiv);
-
-                    lastComment.css("max-height", lastComment[0].scrollHeight +"px");
 
                     stopLoading();
 

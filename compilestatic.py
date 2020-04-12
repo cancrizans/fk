@@ -87,7 +87,7 @@ def compileCFolder():
 
 
 	tree = ET.ElementTree(rss)
-	tree.write('feed.rss',encoding="unicode",xml_declaration=True)
+	tree.write('feed.rss',encoding="utf-8",xml_declaration=True)
 
 
 
