@@ -395,6 +395,13 @@
 			"prefix":"tnc/",
 			"img":["017.png","018.png"],
 			"comment":"Posting is gonna be very irregular these days (well, weeks (months... ? crud)) for reasons you can imagine "
+		},
+		{
+			"code":"tnc_28",
+			"title":"Terms & Conditions - 28",
+			"prefix":"tnc/",
+			"img":["19.png"],
+			"comment":"I'm afraid that reading this comic will never feel as weird as making it. This one references a panel that's over a year and half old now and that just gave me a bit of vertigo. Also I might have drawn this with coronavirus? Like 60% sure. Wonders never cease"
 		}
 	]
 }
