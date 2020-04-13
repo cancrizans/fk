@@ -232,6 +232,8 @@
 
             var stopLoad = false;
 
+            var lastInfo = null;
+
             function stopLoading(){
 
                 stopLoad = true;
@@ -287,6 +289,7 @@
                             var entryInfo = entryDiv.find(".entryinfo");
                             var entryButton = entryDiv.find(".entrylabel");
 
+                            lastInfo = entryInfo;
 
                             entryButton.click(
                                               function() 
@@ -400,6 +403,9 @@
                 {
                     //end of comic
                     $($("#seeyatemplate").html().trim()).appendTo(comicDiv);
+
+                    if(lastInfo)
+                        lastInfo.css("max-height", lastInfo[0].scrollHeight +"px");
 
                     stopLoading();
 

@@ -19,6 +19,8 @@ def compileStaticPages():
 	with open('src/template.html','r') as tf:
 		temp = tf.read()
 
+
+
 	def compilePage(source,dest):
 		print(source + " > " + dest)
 
