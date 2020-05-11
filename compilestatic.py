@@ -14,7 +14,7 @@ LOCATION = "https://cancrizans.github.io/fk/"
 # crop thumb
 def cropThumb(src_im,dest_im):
 	print("cropping thumb %s into %s"%(src_im,dest_im),flush=True)
-	cmd = "magick convert %s[0] -crop 940x700+0+0 -filter Cosine -resize 1000 -quality 90 %s"%(src_im,dest_im)
+	cmd = "magick convert %s[0] -crop 940x493+0+0 -filter Cosine -resize 600 -quality 90 %s"%(src_im,dest_im)
 	subprocess.run(cmd,shell=True)
 
 
