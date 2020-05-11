@@ -409,6 +409,13 @@
 			"prefix":"tnc/",
 			"img":["20.png"],
 			"comment":"Yupppppp. Yyyyyyyyup. Yuuuuuuuuuppp. Yup........."
+		},
+
+		{
+			"code":"tnc_30",
+			"title":"Terms & Conditions - 30",
+			"prefix":"tnc/",
+			"img":["21_0.png", "21_1.png"]
 		}
 	]
 }

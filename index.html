@@ -106,7 +106,7 @@
 
     <template id="breathertemplate">
         <div class="entry">
-            <div class="gonextpage"><div class="gonexttext">Continue to </div><div class="nextpagetitle"></div></div>
+            <a class="gonextpage"><div class="gonexttext">🡻Tap/Click to continue to </div><div class="nextpagetitle"></div></a>
         </div>
 
     </template>
@@ -386,7 +386,7 @@
 
                             entryDiv.find(".nextpagetitle").text(nextComicEntry.title);
                             entryDiv.appendTo(comicDiv);
-                            entryDiv.click(function()
+                            entryDiv.find("a, .gonexttext, .nextpagetitle").click(function()
                             {
                                 window.location = baseURL + '?c=' + nextEntry.code;
                             }

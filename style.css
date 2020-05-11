@@ -14,12 +14,19 @@ body {
 
 	--accent-col: #3BD1E9;
 
+	--hover-col: #d196ec;
+
 	--secondary-font: 'Source Sans Pro', sans-serif;
 	--secondary-font-weight:300;
 }
 
 a {
 	text-decoration-line: none;
+		color:var(--accent-col);
+}
+
+a:hover{
+	color:var(--hover-col);
 }
 
 #page {
@@ -81,9 +88,7 @@ img.titlebanner{
 	font-variant: small-caps;
 }
 
-a{
-	color:var(--accent-col);
-}
+
 
 
 #pitch{
@@ -314,6 +319,8 @@ a{
 	justify-content: center;
 	align-items: center;
 	margin:20px;
+
+	 cursor:pointer;
 }
 
 .nextpagetitle{
