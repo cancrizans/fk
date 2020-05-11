@@ -5,7 +5,17 @@
 import json
 from pathlib import Path
 import xml.etree.cElementTree as ET
+import os.path
+import subprocess
 
+LOCATION = "https://cancrizans.github.io/fk/"
+
+
+# crop thumb
+def cropThumb(src_im,dest_im):
+	print("cropping thumb %s into %s"%(src_im,dest_im),flush=True)
+	cmd = "magick convert %s[0] -crop 940x700+0+0 -filter Cosine -resize 1000 -quality 90 %s"%(src_im,dest_im)
+	subprocess.run(cmd,shell=True)
 
 
 # Compile static pages
@@ -47,9 +57,6 @@ def compileCFolder():
 
 
 	comics = list(filter(lambda e : (not 'type' in e), data['entries']))
-
-
-	LOCATION = "https://cancrizans.github.io/fk/"
 
 
 
@@ -99,7 +106,7 @@ def compileCFolder():
 		template = f.read()
 
 
-	ABSOLUTEIMGPATH = 'https://cancrizans.github.io/fk/pic/'
+	#ABSOLUTEIMGPATH = LOCATION + 'pic/'
 
 	for c in list(comics):
 
@@ -112,7 +119,14 @@ def compileCFolder():
 			c['comment'] = "A psychedelic sci-fi webcomic."
 
 		
-		image = ABSOLUTEIMGPATH + c['prefix'] + c['img'][0]
+		image_source_name = c['prefix'] + c['img'][0]
+		image_source = "pic/"+image_source_name
+
+		image_dest = 'thumbs/'+c['code']+".jpg"
+		if(not Path(image_dest).exists()):
+			cropThumb(image_source,image_dest)
+			
+		image = LOCATION + image_dest
 
 		page = template.replace("$TITLE$",c['title']).replace("$QCODE$","c="+c['code']).replace("$DESCRIPTION$",c['comment']).replace("$IMAGE$",image)
 		
