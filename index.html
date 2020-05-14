@@ -100,7 +100,7 @@
                     <div class="entrycomment"></div>
                     <div class="entrylinksrow"><a href="?">back to archive</a></div>
 
-                    <div id="comments"></div>
+                    
 
                 </div>
             </div>
@@ -463,19 +463,6 @@
                         lastInfo.css({overflow:"", maxHeight:"none"});
 
 
-                        lastInfo.find("#comments").attr("id","commento");
-
-                        // $('<script/>').attr({
-                        //     'src': '"https://cdn.commento.io/js/commento.js',
-                        //     'data-page-id':'main'
-                        // }).appendTo('body')
-
-                        $.ajax({
-                               url:`https://cdn.commento.io/js/commento.js?data-page-id=${lastInfo.code}`,
-                               dataType:"script",
-                               crossDomain:"true"
-
-                           });
                         
 
 
