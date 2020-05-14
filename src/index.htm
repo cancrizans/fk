@@ -414,8 +414,9 @@
                     $($("#seeyatemplate").html().trim()).appendTo(comicDiv);
 
                     if(lastInfo){
-                        lastInfo.css("max-height", lastInfo[0].scrollHeight +"px");
-                        lastInfo.css({overflow:""});
+                        //lastInfo.css("max-height", lastInfo[0].scrollHeight +"px");
+
+                        lastInfo.css({overflow:"", maxHeight:"none"});
 
 
                         lastInfo.find("#comments").attr("id","commento");
@@ -432,6 +433,8 @@
 
                            });
                         
+
+
                     }
 
                     stopLoading();
