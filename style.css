@@ -331,9 +331,19 @@ img.titlebanner{
 
 .seeya{
 	margin:50px 30px 50px 30px;
+	
+	text-align: center;
+}
+
+.seeyabig{
 	font-family: var(--main-font);
 	font-size: 40px;
-	text-align: center;
+}
+
+.whatnow{
+	margin-top: 10px;
+	font-family: var(--secondary-font);
+	font-size: 1.2em;
 }
 
 
