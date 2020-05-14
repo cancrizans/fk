@@ -334,6 +334,7 @@
                             entryDiv = $(entryTemplate);
                             entryImgContainer = entryDiv.find(".entryimgcontainer");
                             var entryInfo = entryDiv.find(".entryinfo");
+                            entryInfo.code = entryData.code;
                             var entryButton = entryDiv.find(".entrylabel");
 
                             lastInfo = entryInfo;
@@ -470,7 +471,7 @@
                         // }).appendTo('body')
 
                         $.ajax({
-                               url:"https://cdn.commento.io/js/commento.js?data-page-id=main",
+                               url:`https://cdn.commento.io/js/commento.js?data-page-id=${lastInfo.code}`,
                                dataType:"script",
                                crossDomain:"true"
 
