@@ -57,6 +57,7 @@
                     <div class="entrycomment"></div>
                     <div class="entrylinksrow"><a href="?">back to archive</a></div>
 
+                    <div id="comments"></div>
 
                 </div>
             </div>
@@ -92,19 +93,7 @@
     </div>
 </div>
 
-<div id="commentscontainer">
-    <div id="commento">
-        
-    </div>
-</div>
 
-
-    <!--<script src="https://cdn.commento.io/js/count.js"></script>-->
-    <script defer
-        src="https://cdn.commento.io/js/commento.js"
-        data-auto-init="false"
-        data-page-id="error">
-    </script>
 
     <script type="text/javascript">
 
@@ -422,7 +411,20 @@
                     if(lastInfo){
                         lastInfo.css("max-height", lastInfo[0].scrollHeight +"px");
 
-                        //lastInfo.find("#comments").attr("id","commento");
+                        lastInfo.find("#comments").attr("id","commento");
+
+                        // $('<script/>').attr({
+                        //     'src': '"https://cdn.commento.io/js/commento.js',
+                        //     'data-page-id':'main'
+                        // }).appendTo('body')
+
+                        $.ajax({
+                               url:"https://cdn.commento.io/js/commento.js?data-page-id=main",
+                               dataType:"script",
+                               crossDomain:"true"
+
+                           });
+                        
                     }
 
                     stopLoading();
