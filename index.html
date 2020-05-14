@@ -341,10 +341,14 @@
                             entryButton.click(
                                               function() 
                                               {
-                                                if (entryInfo.css("max-height") === "0px") 
+                                                if (entryInfo.css("max-height") === "0px") {
                                                   entryInfo.css("max-height", entryInfo[0].scrollHeight +"px");
-                                              else 
+                                                  entryInfo.css({overflow:""}); 
+                                                }
+                                              else {
                                                   entryInfo.css("max-height", "0px");
+                                                  entryInfo.css({overflow:"hidden"});                        
+                                              }
                                           });
 
                             entryDiv.find(".entrylabeltext").text(entryData.code);
@@ -453,6 +457,8 @@
 
                     if(lastInfo){
                         lastInfo.css("max-height", lastInfo[0].scrollHeight +"px");
+                        lastInfo.css({overflow:""});
+
 
                         lastInfo.find("#comments").attr("id","commento");
 
