@@ -416,6 +416,14 @@
 			"title":"Terms & Conditions - 30",
 			"prefix":"tnc/",
 			"img":["21_0.png", "21_1.png"]
+		},
+
+		{
+			"code":"tnc_31",
+			"title":"Terms & Conditions - 31",
+			"prefix":"tnc/22_23_",
+			"img":["0.png", "1.png"],
+			"comment":"back on schedule baby yeahhhhhhhhhhhh"
 		}
 	]
 }
