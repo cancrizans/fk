@@ -424,6 +424,13 @@
 			"prefix":"tnc/22_23_",
 			"img":["0.png", "1.png"],
 			"comment":"back on schedule baby yeahhhhhhhhhhhh"
+		},
+		{
+			"code":"tnc_32",
+			"title":"Terms & Conditions - 32",
+			"prefix":"tnc/",
+			"img":["24.png"],
+			"comment":"All lies bear the tell-tale signature of the liar."
 		}
 	]
 }
