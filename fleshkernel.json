@@ -431,6 +431,13 @@
 			"prefix":"tnc/",
 			"img":["24.png"],
 			"comment":"All lies bear the tell-tale signature of the liar."
+		},
+		{
+			"code":"tnc_33",
+			"title":"Terms & Conditions - 33",
+			"prefix":"tnc/",
+			"img":["25.png"],
+			"comment":"The incel fettuccina"
 		}
 	]
 }
