@@ -143,11 +143,16 @@ def compileCFolder():
 		image_sources = map(lambda ii: "pic/" + c['prefix'] + ii, c['img']) 
 
 		image_heights = []
+		image_widths = []
 		for im in image_sources:
 			width,height = imagesize.get(im)
 			image_heights.append(height)
+			image_widths.append(width)
 
-		heights_dict[c['code']] = image_heights.copy()
+		heights_dict[c['code']] = {
+						'heights':image_heights.copy(),
+						'widths':image_widths.copy()
+						}
 
 
 	# dump heights in heights json

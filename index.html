@@ -459,7 +459,8 @@
                     console.log(image_heights);
                     console.log(entryData.code);
                     if(entryData.code in image_heights){
-                        img.attr('height', image_heights[entryData.code][subImageIndex]);
+                        img.attr('height', image_heights[entryData.code]['heights'][subImageIndex] );
+                        img.attr('width', image_heights[entryData.code]['widths'][subImageIndex] );
                     }
 
                     img.imagesLoaded().always(function(instance){
