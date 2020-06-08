@@ -121,17 +121,26 @@
 
 
         var webcomic;
+        var image_heights;
 
         $().ready(function(){
 
             $.getJSON( "fleshkernel.json", function( data ) {
                 webcomic = data;
-                onLoadWebcomic();
+
+                $.getJSON( "image_heights.json", function( data ) {
+                image_heights = data;
+                    onLoadWebcomic();
+                });
+                
             });
         });
 
 
         function onLoadWebcomic(){
+            
+
+             
 
             var comicDiv = $("#comic");
 
@@ -403,6 +412,12 @@
 
 
                     img.attr('src',url);
+
+                    console.log(image_heights);
+                    console.log(entryData.code);
+                    if(entryData.code in image_heights){
+                        img.attr('height', image_heights[entryData.code][subImageIndex]);
+                    }
 
                     img.imagesLoaded().always(function(instance){
                         img.removeClass("loading");

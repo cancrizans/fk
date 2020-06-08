@@ -7,6 +7,7 @@ from pathlib import Path
 import xml.etree.cElementTree as ET
 import os.path
 import subprocess
+import imagesize
 
 LOCATION = "https://cancrizans.github.io/fk/"
 
@@ -108,8 +109,11 @@ def compileCFolder():
 
 	#ABSOLUTEIMGPATH = LOCATION + 'pic/'
 
+	heights_dict = {}
+
 	for c in list(comics):
 
+		# Prepare thumbnail and create c/ page
 		
 		directory = "c/"+c['code']
 		
@@ -134,6 +138,22 @@ def compileCFolder():
 			ff.write(page)
 
 
+		# note image size information
+
+		image_sources = map(lambda ii: "pic/" + c['prefix'] + ii, c['img']) 
+
+		image_heights = []
+		for im in image_sources:
+			width,height = imagesize.get(im)
+			image_heights.append(height)
+
+		heights_dict[c['code']] = image_heights.copy()
+
+
+	# dump heights in heights json
+
+	with open('image_heights.json','w') as outfile:
+		json.dump(heights_dict,outfile)
 
 
 compileStaticPages()
