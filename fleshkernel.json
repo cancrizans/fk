@@ -446,6 +446,14 @@
 			"prefix":"tnc/",
 			"img":["tnc_2022_001.png","tnc_2022_002.png"],
 			"comment": "YES THIS COMIC IS RESUMING 2 YEARS LATER BABYYYYY!!!!"
+		},
+
+		{
+			"code":"tnc_35",
+			"title":"Terms & Conditions - 35",
+			"prefix":"tnc/",
+			"img":["tnc_2022_003.png","tnc_2022_004.png"],
+			"comment": "And this chapter is finally over after three years! New one starts soon..."
 		}
 	]
 }
