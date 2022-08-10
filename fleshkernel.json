@@ -454,6 +454,31 @@
 			"prefix":"tnc/",
 			"img":["tnc_2022_003.png","tnc_2022_004.png"],
 			"comment": "And this chapter is finally over after three years! New one starts soon..."
+		},
+
+		{
+			"type":"breather"
+		},
+		{
+			"type":"chapter",
+			"title":"Bitches Brew",
+			"date":"August 2022",
+			"img":"ar_bb.png",
+			"code":"bb"
+		},
+
+		{
+			"code":"bb_1",
+			"title":"Bitches Brew - 1",
+			"prefix":"bb/",
+			"img":[
+				"bitchesbrew_001.png",
+				"bitchesbrew_002.png",
+				"bitchesbrew_003.png",
+				"bitchesbrew_004.png",
+				"bitchesbrew_005.png"
+			],
+			"comment": "New chapter! Going for bigger and way less frequent posts from now on. Completely unpredictable schedule. Idgaf"
 		}
 	]
 }
