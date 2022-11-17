@@ -1,1 +1,0 @@
-This is a folder of statically generated pages. They should not be edited, but they should be staged and committed and pushed to github for publishing.

@@ -1,0 +1,333 @@
+# == GUTTA SITE CONFIG
+
+## Site structure definition
+
+hierarchy:
+  webcomic:
+    layout: gallery
+    nav: next
+    list_in_toc: no
+    
+  chapter:
+    layout: trickle
+    nav: next
+    list_in_toc: yes
+
+  segment:
+    banner: banner_recolour.gif
+    layout: scroll
+    nav: next
+    list_in_toc: yes
+
+  update:
+    layout: scroll
+    mount: no
+    dated: yes
+    list_in_toc: yes
+
+
+
+## Generalities relating to hosting, permalinks, rss...
+
+webroot: "https://cancrizans.github.io/fk/"
+rss:
+  entries: update
+
+
+## Additional pages
+
+extras:
+  archive:
+    layout: toc
+  cast:
+    from: cast.md
+
+
+## Navbar Header
+
+navbar:
+  menu:
+    Home: gutta.home
+    Latest: gutta.latest
+    Archive: extras.archive
+    Cast: extras.cast
+    RSS: gutta.rss
+
+
+## Content begins here
+
+root:
+  title: Flesh Kernel
+  short_title: ""
+  description: "Flesh Kernel is a webcomic by [cancrizans](https://cancrizans.github.io/)."
+  banner: banner_recolour.gif
+  show_title: no
+
+  children:
+    rt:
+      title: "Road Trip"
+      prefix: "rt/"
+      thumb: tc_rt.webp
+      description: Police follow up on lead involving shady deal.
+      
+      children:
+        rt:
+          children:
+            rt_tc:
+              title: Title Card
+              pix: big_tc_rt.webp
+            rt_1:
+              title: "1"
+              pix: "[000-008].png"
+            rt_2:
+              title: "2"
+              pix: "[009-016].png"
+            rt_3:
+              title: "3"
+              pix: "[017-021].png"
+            rt_4:
+              title: "4"
+              pix: "[022-027].png"
+            rt_5:
+              title: "5"
+              pix: "[028-033].png"
+            rt_6:
+              title: "6"
+              pix: "[034-039].png"
+            rt_7:
+              title: "7"
+              pix: "[040-051].png"
+            rt_8:
+              title: "8"
+              pix: "[052-058].png"
+        bp:
+          title: Backpack
+          prefix: bp/
+          children:
+            bp:
+              pix: tc_fat.png, [000-003].png
+        gss:
+          title: Gods of the Solar System
+          prefix: gss/
+          children:
+            gss:
+              pix: 000gnrth.png,001laika.png,002neil.png
+
+    sf:
+      title: "Slow Food"
+      description: Suddenly lost appetite.
+      prefix: "sf/"
+      thumb: tc_sf.webp
+      children:
+        sf_a1:
+          children:
+            sf_tc:
+              title: Title Card
+              pix: animatedtc.gif
+            sf_1:
+              title: "1"
+              pix: 000.png
+            sf_2:
+              title: "2"
+              pix: "[001-005].png"
+            sf_3:
+              title: "3"
+              pix: 006.png
+            sf_4:
+              title: "4"
+              pix: 007.png
+            sf_5:
+              title: "5"
+              pix: 008_[0-1].png
+            sf_6:
+              title: "6"
+              pix: 009_[0-2].png
+            sf_7:
+              title: "7"
+              pix: "[010-011].png"
+        as:
+          title: "Intermezzo: Alleyway Stickup"
+          prefix: as/
+          pix: tapas_[0-2].png
+        sf_a2:
+          children:
+            sf_8:
+              title: "8"
+              pix: "[012-014].png"
+            sf_9:
+              title: "9"
+              pix: 015_[0-2].png
+            sf_10:
+              title: "10"
+              pix: 016.png
+            sf_11:
+              title: "11"
+              pix: "017_018_[0-1].png"
+            sf_12:
+              title: "12"
+              pix: "[019-020].png"
+            sf_13:
+              title: "13"
+              pix: "021_022_[0-2].png"
+            sf_14:
+              title: "14"
+              pix: "[023-024].png"
+            sf_15:
+              title: "15"
+              pix: 025_[0-1].png
+            sf_16:
+              title: "16"
+              pix: pg[26-29].png
+        sf_add:
+          title: "Addendum"
+          children:
+            sf_add:
+              pix: outro.png
+
+    tnc:
+      title: "Terms & Conditions"
+      description: Glo goes swimming.
+      prefix: "tnc/"
+      thumb: tc_tnc.webp
+      
+      children:
+        fc:
+          children:
+            fc:
+              title: Fresh Corn
+              pix: pg00_04_redo_0.png, pg00_04_redo_1.png, pg00_04_redo_2.png, pg00_04_redo_3.png,pg04.png
+        tnc:
+          children:
+            tnc_tc:
+              title: Title Card
+              pix: big_tc_tnc.webp
+            tnc_2:
+              title: "2"
+              pix: pg05.png
+            tnc_3:
+              title: "3"
+              pix: pg06_0.png, pg06_1.png
+            tnc_4:
+              title: "4"
+              pix: pg07_0.png, pg07_1.png
+            tnc_5:
+              title: "5"
+              pix: pg08_0.png, pg08_1.png
+            tnc_6:
+              title: "6"
+              pix: pg09_0.png, pg09_1.png
+            tnc_7:
+              title: "7"
+              pix: pg10.png
+            tnc_8:
+              title: "8"
+              pix: pg11.png
+            tnc_9:
+              title: "9"
+              pix: pg12.png
+            tnc_10:
+              title: "10"
+              pix: pg13.png, pg14.png
+            tnc_11:
+              title: "11"
+              pix: pg15.png
+            tnc_12:
+              title: "12"
+              pix: pg16_0.png, pg16_1.png
+            tnc_13:
+              title: "13"
+              pix: pg17.png
+            tnc_14:
+              title: "14"
+              pix: pg18_0.png, pg18_1.png
+            tnc_15:
+              title: "15"
+              pix: pg19.png
+            tnc_16:
+              title: "16"
+              pix: pg20.png
+            tnc_17:
+              title: "17"
+              pix: pg21_0.png, pg21_1.png
+            tnc_18:
+              title: "18"
+              pix: pg22_0.png, pg22_1.png
+            tnc_19:
+              title: "19"
+              pix: 01.png, 02.png
+            tnc_20:
+              title: "20"
+              prefix: "tnc/03_05_part_"
+              pix: 0.png, 1.png, 2.png, 3.png, 4.png
+            tnc_21:
+              title: "21"
+              prefix: "tnc/06_07_"
+              pix: 0.png, 1.png, 2.png, 3.png, 4.png
+            tnc_22:
+              title: "22"
+              prefix: "tnc/08_10_part_"
+              pix: 0.png, 1.png, 2.png, 3.png, 4.png, 5.png
+            tnc_23:
+              title: "23"
+              prefix: tnc/011_012_
+              pix: 0.png, 1.png, 2.png, 3.png
+            tnc_24:
+              title: "24"
+              pix: 13_0.png, 13_1.png, 13_2.png
+            tnc_25:
+              title: "25"
+              pix: 014.png
+            tnc_26:
+              title: "26"
+              pix: 015_016_0.png, 015_016_1.png
+              description: "a bit of a mess here at home because of covid. Here's a life pro tip: don't be Italian"
+            tnc_27:
+              title: "27"
+              pix: 017.png, 018.png
+              description: "Posting is gonna be very irregular these days (well, weeks (months... ? crud)) for reasons you can imagine "
+            tnc_28:
+              title: "28"
+              pix: 19.png
+              description: "I'm afraid that reading this comic will never feel as weird as making it. This one references a panel that's over a year and half old now and that just gave me a bit of vertigo. Also I might have drawn this with coronavirus? Like 60% sure. Wonders never cease"
+            tnc_29:
+              title: "29"
+              pix: 20.png
+              description: "Yupppppp. Yyyyyyyyup. Yuuuuuuuuuppp. Yup........."
+            tnc_30:
+              title: "30"
+              pix: 21_0.png, 21_1.png
+            tnc_31:
+              title: "31"
+              prefix: tnc/22_23_
+              pix: 0.png, 1.png
+              description: "back on schedule baby yeahhhhhhhhhhhh"
+            tnc_32:
+              title: "32"
+              pix: 24.png
+              description: "All lies bear the tell-tale signature of the liar."
+            tnc_33:
+              title: "33"
+              pix: 25_0.png, 25_1.png
+              description: "The incel fettuccina"
+            tnc_34:
+              title: "34"
+              pix: tnc_2022_001.png,tnc_2022_002.png
+              description: "YES THIS COMIC IS RESUMING 2 YEARS LATER BABYYYYY!!!!"
+            tnc_35:
+              title: "35"
+              pix: tnc_2022_003.png,tnc_2022_004.png
+              description: And this chapter is finally over after three years! New one starts soon...
+            
+    bb:
+      title: "Bitches Brew"
+      description: A prayer, a curse, an illusion and a practical solution.
+      prefix: "bb/"
+      thumb: "tc_bb.webp"
+      children:
+        bb:
+          children:
+            bb_1:
+              title: "1"
+              pix: bitchesbrew_[001-005].png
+              description: New chapter! Going for bigger and way less frequent posts from now on. Completely unpredictable schedule. Idgaf
+
