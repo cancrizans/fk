@@ -11,17 +11,18 @@ hierarchy:
   chapter:
     layout: trickle
     nav: next
-    list_in_toc: yes
+    list_in_toc: no
 
   segment:
     banner: banner_recolour.gif
     layout: scroll
     nav: next
-    list_in_toc: yes
+    list_in_toc: no
 
   update:
     layout: scroll
     mount: no
+    infobox: yes
     dated: yes
     list_in_toc: yes
 
@@ -75,6 +76,7 @@ root:
           children:
             rt_tc:
               title: Title Card
+              date: Nov 3, 2018
               pix: big_tc_rt.webp
             rt_1:
               title: "1"
@@ -99,19 +101,23 @@ root:
               pix: "[040-051].png"
             rt_8:
               title: "8"
+              date: Dec 21, 2018
               pix: "[052-058].png"
-        bp:
-          title: Backpack
-          prefix: bp/
-          children:
-            bp:
-              pix: tc_fat.png, [000-003].png
         gss:
           title: Gods of the Solar System
           prefix: gss/
           children:
             gss:
+              date: Dec 28, 2018
               pix: 000gnrth.png,001laika.png,002neil.png
+        bp:
+          title: Backpack
+          prefix: bp/
+          children:
+            bp:
+              date: Jan 04, 2019
+              pix: tc_fat.png, [000-003].png
+        
 
     sf:
       title: "Slow Food"
@@ -122,6 +128,7 @@ root:
         sf_a1:
           children:
             sf_tc:
+              date: Jan 11, 2019
               title: Title Card
               pix: animatedtc.gif
             sf_1:
@@ -144,6 +151,7 @@ root:
               pix: 009_[0-2].png
             sf_7:
               title: "7"
+              date: Feb 22, 2019
               pix: "[010-011].png"
         as:
           title: "Intermezzo: Alleyway Stickup"
@@ -177,6 +185,7 @@ root:
               pix: 025_[0-1].png
             sf_16:
               title: "16"
+              date: May 24, 2019
               pix: pg[26-29].png
         sf_add:
           title: "Addendum"
@@ -195,11 +204,13 @@ root:
           children:
             fc:
               title: Fresh Corn
+              date: May 31, 2019
               pix: pg00_04_redo_0.png, pg00_04_redo_1.png, pg00_04_redo_2.png, pg00_04_redo_3.png,pg04.png
         tnc:
           children:
             tnc_tc:
               title: Title Card
+              date: Jun 02, 2019
               pix: big_tc_tnc.webp
             tnc_2:
               title: "2"
@@ -284,6 +295,7 @@ root:
             tnc_27:
               title: "27"
               pix: 017.png, 018.png
+              date: 30 March, 2020
               description: "Posting is gonna be very irregular these days (well, weeks (months... ? crud)) for reasons you can imagine "
             tnc_28:
               title: "28"
@@ -308,9 +320,11 @@ root:
             tnc_33:
               title: "33"
               pix: 25_0.png, 25_1.png
+              date: Jun 5, 2020
               description: "The incel fettuccina"
             tnc_34:
               title: "34"
+              date: Jul 22, 2022
               pix: tnc_2022_001.png,tnc_2022_002.png
               description: "YES THIS COMIC IS RESUMING 2 YEARS LATER BABYYYYY!!!!"
             tnc_35:
@@ -326,8 +340,13 @@ root:
       children:
         bb:
           children:
+            tc:
+              title: "Title Card"
+              date: Aug 10, 2022
+              pix: big_tc_bb.webp
             bb_1:
               title: "1"
               pix: bitchesbrew_[001-005].png
+              date: Aug 10, 2022
               description: New chapter! Going for bigger and way less frequent posts from now on. Completely unpredictable schedule. Idgaf
 
