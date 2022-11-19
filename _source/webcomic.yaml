@@ -11,6 +11,7 @@ hierarchy:
   chapter:
     layout: trickle
     nav: next
+    show_date: yes
     list_in_toc: no
 
   segment:
@@ -24,14 +25,20 @@ hierarchy:
     mount: no
     infobox: yes
     dated: yes
+    show_date: yes
     list_in_toc: yes
 
+
+## Website metadata
+
+title: Flesh Kernel
+favicon: egg.gif
 
 
 ## Generalities relating to hosting, permalinks, rss...
 
 webroot: "https://cancrizans.github.io/fk/"
-rss:
+feed:
   entries: update
 
 
@@ -60,7 +67,7 @@ navbar:
 root:
   title: Flesh Kernel
   short_title: ""
-  description: "Flesh Kernel is a webcomic by [cancrizans](https://cancrizans.github.io/)."
+  description: "Flesh Kernel is a weird webcomic by [cancrizans canon](https://cancrizans.github.io/) about aliens, gods and madness in the 24th century."
   banner: banner_recolour.gif
   show_title: no
 
@@ -154,9 +161,11 @@ root:
               date: Feb 22, 2019
               pix: "[010-011].png"
         as:
-          title: "Intermezzo: Alleyway Stickup"
-          prefix: as/
-          pix: tapas_[0-2].png
+          children:
+            as:
+              title: "Intermezzo: Alleyway Stickup"
+              prefix: as/
+              pix: tapas_[0-2].png
         sf_a2:
           children:
             sf_8:
