@@ -5,19 +5,16 @@
 hierarchy:
   webcomic:
     layout: gallery
-    nav: next
     list_in_toc: no
     
   chapter:
     layout: trickle
-    nav: next
     show_date: yes
     list_in_toc: no
 
   segment:
     banner: banner_recolour.gif
     layout: scroll
-    nav: next
     list_in_toc: no
 
   update:
@@ -32,7 +29,7 @@ hierarchy:
 ## Website metadata
 
 title: Flesh Kernel
-favicon: egg.gif
+favicon: eggicon.svg
 
 
 ## Generalities relating to hosting, permalinks, rss...
@@ -137,7 +134,7 @@ root:
             sf_tc:
               date: Jan 11, 2019
               title: Title Card
-              pix: animatedtc.gif
+              pix: big_tc_sf.webp
             sf_1:
               title: "1"
               pix: 000.png
@@ -161,9 +158,9 @@ root:
               date: Feb 22, 2019
               pix: "[010-011].png"
         as:
+          title: "Intermezzo: Alleyway Stickup"
           children:
-            as:
-              title: "Intermezzo: Alleyway Stickup"
+            as:    
               prefix: as/
               pix: tapas_[0-2].png
         sf_a2:
@@ -210,6 +207,7 @@ root:
       
       children:
         fc:
+          title: Fresh Corn
           children:
             fc:
               title: Fresh Corn
