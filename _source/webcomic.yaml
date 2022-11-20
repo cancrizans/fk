@@ -30,6 +30,7 @@ hierarchy:
 
 title: Flesh Kernel
 favicon: eggicon.svg
+loading_spinner: egg.gif
 
 
 ## Generalities relating to hosting, permalinks, rss...
