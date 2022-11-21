@@ -7,6 +7,7 @@ hierarchy:
     layout: gallery
     list_in_toc: no
     
+    
   chapter:
     layout: trickle
     show_date: yes
@@ -68,6 +69,7 @@ root:
   description: "Flesh Kernel is a weird webcomic by [cancrizans canon](https://cancrizans.github.io/) about aliens, gods and madness in the 24th century."
   banner: banner_recolour.gif
   show_title: no
+  og.img: series_icon.png
 
   children:
     rt:
@@ -209,6 +211,7 @@ root:
       children:
         fc:
           title: Fresh Corn
+          og.img: pg04.png
           children:
             fc:
               title: Fresh Corn
