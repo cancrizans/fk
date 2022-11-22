@@ -20,7 +20,7 @@ hierarchy:
 
   update:
     layout: scroll
-    mount: no
+    mount: redirect
     infobox: yes
     dated: yes
     show_date: yes
