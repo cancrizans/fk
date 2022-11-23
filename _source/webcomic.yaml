@@ -39,7 +39,8 @@ loading_spinner: egg.gif
 webroot: "https://cancrizans.github.io/fk/"
 feed:
   entries: update
-
+google.analytics:
+  tracking_id: UA-163492573-1 # please don't copy this. This is for Flesh Kernel.
 
 ## Additional pages
 
