@@ -36,7 +36,7 @@ loading_spinner: egg.gif
 
 ## Generalities relating to hosting, permalinks, rss...
 
-webroot: "https://cancrizans.github.io/fk/"
+webroot: "https://fleshkernel.com/"
 feed:
   entries: update
 google.analytics:
