@@ -215,7 +215,6 @@ root:
           og.img: pg04.png
           children:
             fc:
-              title: Fresh Corn
               date: May 31, 2019
               pix: pg00_04_redo_0.png, pg00_04_redo_1.png, pg00_04_redo_2.png, pg00_04_redo_3.png,pg04.png
         tnc:
@@ -354,7 +353,7 @@ root:
           children:
             tc:
               title: "Title Card"
-              date: Aug 10, 2022
+              date: Aug 9, 2022
               pix: big_tc_bb.webp
             bb_1:
               title: "1"
