@@ -17,6 +17,7 @@ hierarchy:
     banner: banner_recolour.gif
     layout: scroll
     list_in_toc: no
+    
 
   update:
     layout: scroll
@@ -351,7 +352,7 @@ root:
       children:
         bb:
           children:
-            tc:
+            bb_tc:
               title: "Title Card"
               date: Aug 9, 2022
               pix: big_tc_bb.webp
