@@ -63,6 +63,13 @@ navbar:
     RSS: gutta.rss
 
 
+labels:
+  goto_next: "Continue reading: @gutta.next.full_title"
+  goto_end: "You've reached the end of Flesh Kernel - stay tuned for the next episode! [Back Home](@gutta.home)"
+  goto_back: "Go back to @gutta.previous.full_title"
+  
+
+
 ## Content begins here
 
 root:
@@ -117,6 +124,7 @@ root:
           prefix: gss/
           children:
             gss:
+              mount: no
               date: Dec 28, 2018
               pix: 000gnrth.png,001laika.png,002neil.png
         bp:
@@ -202,6 +210,7 @@ root:
           title: "Addendum"
           children:
             sf_add:
+              mount: no
               pix: outro.png
 
     tnc:
@@ -216,6 +225,7 @@ root:
           og.img: pg04.png
           children:
             fc:
+              mount: no
               date: May 31, 2019
               pix: pg00_04_redo_0.png, pg00_04_redo_1.png, pg00_04_redo_2.png, pg00_04_redo_3.png,pg04.png
         tnc:
@@ -361,4 +371,8 @@ root:
               pix: bitchesbrew_[001-005].png
               date: Aug 10, 2022
               description: New chapter! Going for bigger and way less frequent posts from now on. Completely unpredictable schedule. Idgaf
-
+            bb_2:
+              title: "2"
+              pix: bitchesbrew_006.webp
+              date: Nov 27, 2022
+              description: Officially rolling out the new website for the comic here at fleshkernel.com. It's been a long time coming!

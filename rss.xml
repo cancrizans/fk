@@ -6,7 +6,14 @@
     <description>Flesh Kernel is a weird webcomic by cancrizans canon about aliens, gods and madness in the 24th century.</description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
-    <lastBuildDate>Fri, 25 Nov 2022 18:12:23 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 27 Nov 2022 14:16:27 +0000</lastBuildDate>
+    <item>
+      <title>Bitches Brew - 2</title>
+      <link>https://fleshkernel.com/bb_2/</link>
+      <description>&lt;img src='https://fleshkernel.com/_assets/bb/bitchesbrew_006.webp' width='940' height='1880' alt='Bitches Brew - 2'&gt;&lt;/hr&gt;&lt;p&gt;Officially rolling out the new website for the comic here at fleshkernel.com. It's been a long time coming!&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://fleshkernel.com/bb_2/</guid>
+      <pubDate>Sun, 27 Nov 2022 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Bitches Brew - 1</title>
       <link>https://fleshkernel.com/bb_1/</link>
@@ -268,16 +275,16 @@
     </item>
     <item>
       <title>Terms &amp; Conditions - Fresh Corn</title>
-      <link>https://fleshkernel.com/fc2/</link>
+      <link>https://fleshkernel.com/fc/#fc</link>
       <description>&lt;img src='https://fleshkernel.com/_assets/tnc/pg00_04_redo_0.png' width='940' height='3643' alt='Terms &amp; Conditions - Fresh Corn'&gt;&lt;/hr&gt;</description>
-      <guid isPermaLink="false">https://fleshkernel.com/fc2/</guid>
+      <guid isPermaLink="false">https://fleshkernel.com/fc/#fc</guid>
       <pubDate>Fri, 31 May 2019 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Slow Food - Addendum</title>
-      <link>https://fleshkernel.com/sf_add2/</link>
+      <link>https://fleshkernel.com/sf_add/#sf_add</link>
       <description>&lt;img src='https://fleshkernel.com/_assets/sf/outro.png' width='940' height='3760' alt='Slow Food - Addendum'&gt;&lt;/hr&gt;</description>
-      <guid isPermaLink="false">https://fleshkernel.com/sf_add2/</guid>
+      <guid isPermaLink="false">https://fleshkernel.com/sf_add/#sf_add</guid>
       <pubDate>Mon, 27 May 2019 12:00:00 +0000</pubDate>
     </item>
     <item>
@@ -415,9 +422,9 @@
     </item>
     <item>
       <title>Road Trip - Gods of the Solar System</title>
-      <link>https://fleshkernel.com/gss2/</link>
+      <link>https://fleshkernel.com/gss/#gss</link>
       <description>&lt;img src='https://fleshkernel.com/_assets/gss/000gnrth.png' width='940' height='1567' alt='Road Trip - Gods of the Solar System'&gt;&lt;/hr&gt;</description>
-      <guid isPermaLink="false">https://fleshkernel.com/gss2/</guid>
+      <guid isPermaLink="false">https://fleshkernel.com/gss/#gss</guid>
       <pubDate>Fri, 28 Dec 2018 00:00:00 +0000</pubDate>
     </item>
     <item>
