@@ -60,6 +60,7 @@ navbar:
     Latest: gutta.latest
     Archive: extras.archive
     Cast: extras.cast
+    Discord: href.https://discord.gg/aSCEmzQ
     RSS: gutta.rss
 
 
