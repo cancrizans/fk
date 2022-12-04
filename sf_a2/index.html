@@ -27,7 +27,9 @@
                 gtag('config', 'UA-163492573-1');
             </script>
     <link rel="stylesheet" href="../static/wc.css">
-     <link rel="icon" type="image/gif" href="../_assets/eggicon.svg">      
+    <link rel="icon" type="image/gif" href="../_assets/eggicon.svg">      
+        <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
+        <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
 </head>
     <body>    <div class="container d-flex flex-column align-items-center gutta-body">
             <img src="../_assets/banner_recolour.gif" width="100%">
@@ -329,14 +331,21 @@
     <div class="gutta-next d-flex flex-column align-items-center justify-content-center"><h3><a href="../sf_add/">Continue reading: Slow Food - Addendum</a></h3>
     </div>
 
-    <div class="gutta-scrollbuffer"></div>
+    
 
 
-</div>
+</div><div id="comment-section"></div><div class="gutta-scrollbuffer"></div>
 
         <div class="gutta-acknowledgement text-muted">
-            <a href="https://github.com/cancrizans/gutta"><img src="../static/gutta_logo24.png"> made with gutta version 0.0.18</a>
+            <a href="https://github.com/cancrizans/gutta"><img src="../static/gutta_logo24.png"> made with gutta version 0.0.20</a>
         </div>
-    </div>
-    </body>
+    </div><script>
+            initComments({
+                node: document.getElementById("comment-section"),
+                defaultHomeserverUrl: "https://matrix.cactus.chat:8448",
+                serverName: "cactus.chat",
+                siteName: "fleshkernel",
+                commentSectionId: "root.sf.sf_a2"
+            })
+        </script>    </body>
 </html>

@@ -6,7 +6,7 @@ hierarchy:
   webcomic:
     layout: gallery
     list_in_toc: no
-    
+    comments: yes
     
   chapter:
     layout: trickle
@@ -17,6 +17,7 @@ hierarchy:
     banner: banner_recolour.gif
     layout: scroll
     list_in_toc: no
+    comments: yes
     
 
   update:
@@ -43,6 +44,12 @@ feed:
 google.analytics:
   tracking_id: UA-163492573-1 # please don't copy this. This is for Flesh Kernel.
 
+cactus:
+  site_name: fleshkernel
+
+
+
+
 ## Additional pages
 
 extras:
@@ -64,14 +71,17 @@ navbar:
     RSS: gutta.rss
 
 
+## Not implemented in gutta yet -- custom labels
+
 labels:
   goto_next: "Continue reading: @gutta.next.full_title"
   goto_end: "You've reached the end of Flesh Kernel - stay tuned for the next episode! [Back Home](@gutta.home)"
   goto_back: "Go back to @gutta.previous.full_title"
-  
 
 
-## Content begins here
+
+
+# == Content begins here ==
 
 root:
   title: Flesh Kernel
