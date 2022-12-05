@@ -8,12 +8,17 @@ $color-galleryentry-bg: #181818;
 
 $color-scrollcontent-bg: black;
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Source+Code+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Source+Sans+Pro:300,400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
-$font-main: 'Lato', sans-serif;
-$font-weight-main: 300;
-$font-text: 'Source Sans Pro', sans-serif;
+$font-main: 'Flamenco', serif;
+$font-weight-main: 400;
+$root-font-size: 18px; 
+$font-text: 'Nunito', sans-serif;
 $font-weight-text: 300;
 
 
+$gallery-columns-xs: 1;
+$gallery-columns-sm: 2;
+$gallery-columns-md: 2;
+$gallery-columns-lg: 3;
