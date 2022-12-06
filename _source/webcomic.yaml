@@ -71,7 +71,7 @@ navbar:
     RSS: gutta.rss
 
 
-## Not implemented in gutta yet -- custom labels
+## Custom labels
 
 labels:
   goto_next: "Continue reading: {{next.full_title}}"
