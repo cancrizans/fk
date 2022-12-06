@@ -74,9 +74,9 @@ navbar:
 ## Not implemented in gutta yet -- custom labels
 
 labels:
-  goto_next: "Continue reading: @gutta.next.full_title"
-  goto_end: "You've reached the end of Flesh Kernel - stay tuned for the next episode! [Back Home](@gutta.home)"
-  goto_back: "Go back to @gutta.previous.full_title"
+  goto_next: "Continue reading: {{next.full_title}}"
+  end: "You've reached the end of Flesh Kernel - stay tuned for the next episode! [Back Home]({{sroot}})"
+  goto_back: "Go back to {{previous.full_title}}"
 
 
 
