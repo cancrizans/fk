@@ -2,14 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://fleshkernel.com/</id>
   <title>Flesh Kernel</title>
-  <updated>2022-12-06T17:25:46.778475+00:00</updated>
+  <updated>2022-12-23T17:59:38.441240+00:00</updated>
   <link href="https://fleshkernel.com/" rel="alternate"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
   <subtitle>Flesh Kernel is a weird webcomic by cancrizans canon about aliens, gods and madness in the 24th century.</subtitle>
   <entry>
+    <id>https://fleshkernel.com/bb_3/</id>
+    <title>Bitches Brew - 3</title>
+    <updated>2022-12-23T17:59:38.450247+00:00</updated>
+    <content>&lt;img src='https://fleshkernel.com/_assets/bb/bitchesbrew_007.webp' width='940' height='1649' alt='Bitches Brew - 3'&gt;&lt;/hr&gt;&lt;p&gt;Ho ho ho, Merry Christmas, etc etc&lt;/p&gt;</content>
+    <link href="https://fleshkernel.com/bb_3/" rel="alternate"/>
+    <published>2022-12-23T00:00:00+00:00</published>
+  </entry>
+  <entry>
     <id>https://fleshkernel.com/bb_2/</id>
     <title>Bitches Brew - 2</title>
-    <updated>2022-12-06T17:25:46.787481+00:00</updated>
+    <updated>2022-12-23T17:59:38.450247+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/bb/bitchesbrew_006.webp' width='940' height='1880' alt='Bitches Brew - 2'&gt;&lt;/hr&gt;&lt;p&gt;Officially rolling out the new website for the comic here at fleshkernel.com. It's been a long time coming!&lt;/p&gt;</content>
     <link href="https://fleshkernel.com/bb_2/" rel="alternate"/>
     <published>2022-11-27T00:00:00+00:00</published>
@@ -17,7 +25,7 @@
   <entry>
     <id>https://fleshkernel.com/bb_1/</id>
     <title>Bitches Brew - 1</title>
-    <updated>2022-12-06T17:25:46.786480+00:00</updated>
+    <updated>2022-12-23T17:59:38.450247+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/bb/bitchesbrew_001.png' width='940' height='1330' alt='Bitches Brew - 1'&gt;&lt;/hr&gt;&lt;p&gt;New chapter! Going for bigger and way less frequent posts from now on. Completely unpredictable schedule. Idgaf&lt;/p&gt;</content>
     <link href="https://fleshkernel.com/bb_1/" rel="alternate"/>
     <published>2022-08-10T00:00:00+00:00</published>
@@ -25,7 +33,7 @@
   <entry>
     <id>https://fleshkernel.com/bb_tc/</id>
     <title>Bitches Brew - Title Card</title>
-    <updated>2022-12-06T17:25:46.786480+00:00</updated>
+    <updated>2022-12-23T17:59:38.450247+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/bb/big_tc_bb.webp' width='940' height='940' alt='Bitches Brew - Title Card'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/bb_tc/" rel="alternate"/>
     <published>2022-08-09T00:00:00+00:00</published>
@@ -33,7 +41,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_35/</id>
     <title>Terms &amp; Conditions - 35</title>
-    <updated>2022-12-06T17:25:46.786480+00:00</updated>
+    <updated>2022-12-23T17:59:38.450247+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/tnc_2022_003.png' width='940' height='5765' alt='Terms &amp; Conditions - 35'&gt;&lt;/hr&gt;&lt;p&gt;And this chapter is finally over after three years! New one starts soon...&lt;/p&gt;</content>
     <link href="https://fleshkernel.com/tnc_35/" rel="alternate"/>
     <published>2022-07-31T00:00:00+00:00</published>
@@ -41,7 +49,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_34/</id>
     <title>Terms &amp; Conditions - 34</title>
-    <updated>2022-12-06T17:25:46.786480+00:00</updated>
+    <updated>2022-12-23T17:59:38.450247+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/tnc_2022_001.png' width='940' height='1629' alt='Terms &amp; Conditions - 34'&gt;&lt;/hr&gt;&lt;p&gt;YES THIS COMIC IS RESUMING 2 YEARS LATER BABYYYYY!!!!&lt;/p&gt;</content>
     <link href="https://fleshkernel.com/tnc_34/" rel="alternate"/>
     <published>2022-07-22T00:00:00+00:00</published>
@@ -49,7 +57,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_33/</id>
     <title>Terms &amp; Conditions - 33</title>
-    <updated>2022-12-06T17:25:46.786480+00:00</updated>
+    <updated>2022-12-23T17:59:38.450247+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/25_0.png' width='940' height='2350' alt='Terms &amp; Conditions - 33'&gt;&lt;/hr&gt;&lt;p&gt;The incel fettuccina&lt;/p&gt;</content>
     <link href="https://fleshkernel.com/tnc_33/" rel="alternate"/>
     <published>2020-06-05T00:00:00+00:00</published>
@@ -57,7 +65,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_32/</id>
     <title>Terms &amp; Conditions - 32</title>
-    <updated>2022-12-06T17:25:46.786480+00:00</updated>
+    <updated>2022-12-23T17:59:38.450247+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/24.png' width='940' height='3760' alt='Terms &amp; Conditions - 32'&gt;&lt;/hr&gt;&lt;p&gt;All lies bear the tell-tale signature of the liar.&lt;/p&gt;</content>
     <link href="https://fleshkernel.com/tnc_32/" rel="alternate"/>
     <published>2020-05-24T20:00:00+00:00</published>
@@ -65,7 +73,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_31/</id>
     <title>Terms &amp; Conditions - 31</title>
-    <updated>2022-12-06T17:25:46.786480+00:00</updated>
+    <updated>2022-12-23T17:59:38.449247+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/22_23_0.png' width='940' height='3055' alt='Terms &amp; Conditions - 31'&gt;&lt;/hr&gt;&lt;p&gt;back on schedule baby yeahhhhhhhhhhhh&lt;/p&gt;</content>
     <link href="https://fleshkernel.com/tnc_31/" rel="alternate"/>
     <published>2020-05-13T16:00:00+00:00</published>
@@ -73,7 +81,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_30/</id>
     <title>Terms &amp; Conditions - 30</title>
-    <updated>2022-12-06T17:25:46.786480+00:00</updated>
+    <updated>2022-12-23T17:59:38.449247+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/21_0.png' width='940' height='1880' alt='Terms &amp; Conditions - 30'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/tnc_30/" rel="alternate"/>
     <published>2020-05-02T12:00:00+00:00</published>
@@ -81,7 +89,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_29/</id>
     <title>Terms &amp; Conditions - 29</title>
-    <updated>2022-12-06T17:25:46.786480+00:00</updated>
+    <updated>2022-12-23T17:59:38.449247+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/20.png' width='940' height='2311' alt='Terms &amp; Conditions - 29'&gt;&lt;/hr&gt;&lt;p&gt;Yupppppp. Yyyyyyyyup. Yuuuuuuuuuppp. Yup.........&lt;/p&gt;</content>
     <link href="https://fleshkernel.com/tnc_29/" rel="alternate"/>
     <published>2020-04-21T08:00:00+00:00</published>
@@ -89,7 +97,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_28/</id>
     <title>Terms &amp; Conditions - 28</title>
-    <updated>2022-12-06T17:25:46.786480+00:00</updated>
+    <updated>2022-12-23T17:59:38.449247+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/19.png' width='940' height='3256' alt='Terms &amp; Conditions - 28'&gt;&lt;/hr&gt;&lt;p&gt;I'm afraid that reading this comic will never feel as weird as making it. This one references a panel that's over a year and half old now and that just gave me a bit of vertigo. Also I might have drawn this with coronavirus? Like 60% sure. Wonders never cease&lt;/p&gt;</content>
     <link href="https://fleshkernel.com/tnc_28/" rel="alternate"/>
     <published>2020-04-10T04:00:00+00:00</published>
@@ -97,7 +105,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_27/</id>
     <title>Terms &amp; Conditions - 27</title>
-    <updated>2022-12-06T17:25:46.786480+00:00</updated>
+    <updated>2022-12-23T17:59:38.449247+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/017.png' width='940' height='2296' alt='Terms &amp; Conditions - 27'&gt;&lt;/hr&gt;&lt;p&gt;Posting is gonna be very irregular these days (well, weeks (months... ? crud)) for reasons you can imagine &lt;/p&gt;</content>
     <link href="https://fleshkernel.com/tnc_27/" rel="alternate"/>
     <published>2020-03-30T00:00:00+00:00</published>
@@ -105,7 +113,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_26/</id>
     <title>Terms &amp; Conditions - 26</title>
-    <updated>2022-12-06T17:25:46.786480+00:00</updated>
+    <updated>2022-12-23T17:59:38.449247+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/015_016_0.png' width='940' height='2372' alt='Terms &amp; Conditions - 26'&gt;&lt;/hr&gt;&lt;p&gt;a bit of a mess here at home because of covid. Here's a life pro tip: don't be Italian&lt;/p&gt;</content>
     <link href="https://fleshkernel.com/tnc_26/" rel="alternate"/>
     <published>2020-03-18T08:13:50.769231+00:00</published>
@@ -113,7 +121,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_25/</id>
     <title>Terms &amp; Conditions - 25</title>
-    <updated>2022-12-06T17:25:46.786480+00:00</updated>
+    <updated>2022-12-23T17:59:38.449247+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/014.png' width='940' height='2820' alt='Terms &amp; Conditions - 25'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/tnc_25/" rel="alternate"/>
     <published>2020-03-06T17:27:41.538461+00:00</published>
@@ -121,7 +129,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_24/</id>
     <title>Terms &amp; Conditions - 24</title>
-    <updated>2022-12-06T17:25:46.786480+00:00</updated>
+    <updated>2022-12-23T17:59:38.449247+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/13_0.png' width='940' height='1097' alt='Terms &amp; Conditions - 24'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/tnc_24/" rel="alternate"/>
     <published>2020-02-24T02:41:32.307692+00:00</published>
@@ -129,7 +137,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_23/</id>
     <title>Terms &amp; Conditions - 23</title>
-    <updated>2022-12-06T17:25:46.786480+00:00</updated>
+    <updated>2022-12-23T17:59:38.448247+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/011_012_0.png' width='940' height='1148' alt='Terms &amp; Conditions - 23'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/tnc_23/" rel="alternate"/>
     <published>2020-02-12T11:55:23.076923+00:00</published>
@@ -137,7 +145,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_22/</id>
     <title>Terms &amp; Conditions - 22</title>
-    <updated>2022-12-06T17:25:46.786480+00:00</updated>
+    <updated>2022-12-23T17:59:38.448247+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/08_10_part_0.png' width='940' height='1300' alt='Terms &amp; Conditions - 22'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/tnc_22/" rel="alternate"/>
     <published>2020-01-31T21:09:13.846154+00:00</published>
@@ -145,7 +153,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_21/</id>
     <title>Terms &amp; Conditions - 21</title>
-    <updated>2022-12-06T17:25:46.785479+00:00</updated>
+    <updated>2022-12-23T17:59:38.448247+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/06_07_0.png' width='940' height='3212' alt='Terms &amp; Conditions - 21'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/tnc_21/" rel="alternate"/>
     <published>2020-01-20T06:23:04.615385+00:00</published>
@@ -153,7 +161,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_20/</id>
     <title>Terms &amp; Conditions - 20</title>
-    <updated>2022-12-06T17:25:46.785479+00:00</updated>
+    <updated>2022-12-23T17:59:38.448247+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/03_05_part_0.png' width='940' height='2559' alt='Terms &amp; Conditions - 20'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/tnc_20/" rel="alternate"/>
     <published>2020-01-08T15:36:55.384615+00:00</published>
@@ -161,7 +169,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_19/</id>
     <title>Terms &amp; Conditions - 19</title>
-    <updated>2022-12-06T17:25:46.785479+00:00</updated>
+    <updated>2022-12-23T17:59:38.448247+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/01.png' width='940' height='1722' alt='Terms &amp; Conditions - 19'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/tnc_19/" rel="alternate"/>
     <published>2019-12-28T00:50:46.153846+00:00</published>
@@ -169,7 +177,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_18/</id>
     <title>Terms &amp; Conditions - 18</title>
-    <updated>2022-12-06T17:25:46.785479+00:00</updated>
+    <updated>2022-12-23T17:59:38.448247+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/pg22_0.png' width='940' height='2350' alt='Terms &amp; Conditions - 18'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/tnc_18/" rel="alternate"/>
     <published>2019-12-16T10:04:36.923077+00:00</published>
@@ -177,7 +185,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_17/</id>
     <title>Terms &amp; Conditions - 17</title>
-    <updated>2022-12-06T17:25:46.785479+00:00</updated>
+    <updated>2022-12-23T17:59:38.447244+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/pg21_0.png' width='940' height='2358' alt='Terms &amp; Conditions - 17'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/tnc_17/" rel="alternate"/>
     <published>2019-12-04T19:18:27.692308+00:00</published>
@@ -185,7 +193,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_16/</id>
     <title>Terms &amp; Conditions - 16</title>
-    <updated>2022-12-06T17:25:46.785479+00:00</updated>
+    <updated>2022-12-23T17:59:38.447244+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/pg20.png' width='940' height='3760' alt='Terms &amp; Conditions - 16'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/tnc_16/" rel="alternate"/>
     <published>2019-11-23T04:32:18.461539+00:00</published>
@@ -193,7 +201,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_15/</id>
     <title>Terms &amp; Conditions - 15</title>
-    <updated>2022-12-06T17:25:46.785479+00:00</updated>
+    <updated>2022-12-23T17:59:38.447244+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/pg19.png' width='940' height='3760' alt='Terms &amp; Conditions - 15'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/tnc_15/" rel="alternate"/>
     <published>2019-11-11T13:46:09.230769+00:00</published>
@@ -201,7 +209,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_14/</id>
     <title>Terms &amp; Conditions - 14</title>
-    <updated>2022-12-06T17:25:46.784479+00:00</updated>
+    <updated>2022-12-23T17:59:38.447244+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/pg18_0.png' width='940' height='2820' alt='Terms &amp; Conditions - 14'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/tnc_14/" rel="alternate"/>
     <published>2019-10-30T23:00:00+00:00</published>
@@ -209,7 +217,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_13/</id>
     <title>Terms &amp; Conditions - 13</title>
-    <updated>2022-12-06T17:25:46.784479+00:00</updated>
+    <updated>2022-12-23T17:59:38.447244+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/pg17.png' width='940' height='3464' alt='Terms &amp; Conditions - 13'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/tnc_13/" rel="alternate"/>
     <published>2019-10-19T09:13:50.769231+00:00</published>
@@ -217,7 +225,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_12/</id>
     <title>Terms &amp; Conditions - 12</title>
-    <updated>2022-12-06T17:25:46.784479+00:00</updated>
+    <updated>2022-12-23T17:59:38.447244+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/pg16_0.png' width='940' height='2350' alt='Terms &amp; Conditions - 12'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/tnc_12/" rel="alternate"/>
     <published>2019-10-07T18:27:41.538461+00:00</published>
@@ -225,7 +233,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_11/</id>
     <title>Terms &amp; Conditions - 11</title>
-    <updated>2022-12-06T17:25:46.784479+00:00</updated>
+    <updated>2022-12-23T17:59:38.447244+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/pg15.png' width='940' height='1596' alt='Terms &amp; Conditions - 11'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/tnc_11/" rel="alternate"/>
     <published>2019-09-26T03:41:32.307692+00:00</published>
@@ -233,7 +241,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_10/</id>
     <title>Terms &amp; Conditions - 10</title>
-    <updated>2022-12-06T17:25:46.784479+00:00</updated>
+    <updated>2022-12-23T17:59:38.447244+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/pg13.png' width='940' height='1555' alt='Terms &amp; Conditions - 10'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/tnc_10/" rel="alternate"/>
     <published>2019-09-14T12:55:23.076923+00:00</published>
@@ -241,7 +249,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_9/</id>
     <title>Terms &amp; Conditions - 9</title>
-    <updated>2022-12-06T17:25:46.784479+00:00</updated>
+    <updated>2022-12-23T17:59:38.446256+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/pg12.png' width='940' height='2603' alt='Terms &amp; Conditions - 9'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/tnc_9/" rel="alternate"/>
     <published>2019-09-02T22:09:13.846154+00:00</published>
@@ -249,7 +257,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_8/</id>
     <title>Terms &amp; Conditions - 8</title>
-    <updated>2022-12-06T17:25:46.784479+00:00</updated>
+    <updated>2022-12-23T17:59:38.446256+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/pg11.png' width='940' height='3149' alt='Terms &amp; Conditions - 8'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/tnc_8/" rel="alternate"/>
     <published>2019-08-22T07:23:04.615385+00:00</published>
@@ -257,7 +265,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_7/</id>
     <title>Terms &amp; Conditions - 7</title>
-    <updated>2022-12-06T17:25:46.783478+00:00</updated>
+    <updated>2022-12-23T17:59:38.446256+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/pg10.png' width='940' height='3760' alt='Terms &amp; Conditions - 7'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/tnc_7/" rel="alternate"/>
     <published>2019-08-10T16:36:55.384615+00:00</published>
@@ -265,7 +273,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_6/</id>
     <title>Terms &amp; Conditions - 6</title>
-    <updated>2022-12-06T17:25:46.783478+00:00</updated>
+    <updated>2022-12-23T17:59:38.446256+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/pg09_0.png' width='940' height='2898' alt='Terms &amp; Conditions - 6'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/tnc_6/" rel="alternate"/>
     <published>2019-07-30T01:50:46.153846+00:00</published>
@@ -273,7 +281,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_5/</id>
     <title>Terms &amp; Conditions - 5</title>
-    <updated>2022-12-06T17:25:46.783478+00:00</updated>
+    <updated>2022-12-23T17:59:38.446256+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/pg08_0.png' width='940' height='2377' alt='Terms &amp; Conditions - 5'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/tnc_5/" rel="alternate"/>
     <published>2019-07-18T11:04:36.923077+00:00</published>
@@ -281,7 +289,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_4/</id>
     <title>Terms &amp; Conditions - 4</title>
-    <updated>2022-12-06T17:25:46.783478+00:00</updated>
+    <updated>2022-12-23T17:59:38.446256+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/pg07_0.png' width='940' height='2219' alt='Terms &amp; Conditions - 4'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/tnc_4/" rel="alternate"/>
     <published>2019-07-06T20:18:27.692308+00:00</published>
@@ -289,7 +297,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_3/</id>
     <title>Terms &amp; Conditions - 3</title>
-    <updated>2022-12-06T17:25:46.783478+00:00</updated>
+    <updated>2022-12-23T17:59:38.446256+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/pg06_0.png' width='940' height='2244' alt='Terms &amp; Conditions - 3'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/tnc_3/" rel="alternate"/>
     <published>2019-06-25T05:32:18.461539+00:00</published>
@@ -297,7 +305,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_2/</id>
     <title>Terms &amp; Conditions - 2</title>
-    <updated>2022-12-06T17:25:46.783478+00:00</updated>
+    <updated>2022-12-23T17:59:38.445244+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/pg05.png' width='940' height='3760' alt='Terms &amp; Conditions - 2'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/tnc_2/" rel="alternate"/>
     <published>2019-06-13T14:46:09.230769+00:00</published>
@@ -305,7 +313,7 @@
   <entry>
     <id>https://fleshkernel.com/tnc_tc/</id>
     <title>Terms &amp; Conditions - Title Card</title>
-    <updated>2022-12-06T17:25:46.783478+00:00</updated>
+    <updated>2022-12-23T17:59:38.445244+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/big_tc_tnc.webp' width='940' height='940' alt='Terms &amp; Conditions - Title Card'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/tnc_tc/" rel="alternate"/>
     <published>2019-06-02T00:00:00+00:00</published>
@@ -313,7 +321,7 @@
   <entry>
     <id>https://fleshkernel.com/fc/#fc</id>
     <title>Terms &amp; Conditions - Fresh Corn</title>
-    <updated>2022-12-06T17:25:46.783478+00:00</updated>
+    <updated>2022-12-23T17:59:38.445244+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/tnc/pg00_04_redo_0.png' width='940' height='3643' alt='Terms &amp; Conditions - Fresh Corn'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/fc/#fc" rel="alternate"/>
     <published>2019-05-31T00:00:00+00:00</published>
@@ -321,7 +329,7 @@
   <entry>
     <id>https://fleshkernel.com/sf_add/#sf_add</id>
     <title>Slow Food - Addendum</title>
-    <updated>2022-12-06T17:25:46.782477+00:00</updated>
+    <updated>2022-12-23T17:59:38.445244+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/sf/outro.png' width='940' height='3760' alt='Slow Food - Addendum'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/sf_add/#sf_add" rel="alternate"/>
     <published>2019-05-27T12:00:00+00:00</published>
@@ -329,7 +337,7 @@
   <entry>
     <id>https://fleshkernel.com/sf_16/</id>
     <title>Slow Food - 16</title>
-    <updated>2022-12-06T17:25:46.782477+00:00</updated>
+    <updated>2022-12-23T17:59:38.445244+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/sf/pg26.png' width='940' height='1880' alt='Slow Food - 16'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/sf_16/" rel="alternate"/>
     <published>2019-05-24T00:00:00+00:00</published>
@@ -337,7 +345,7 @@
   <entry>
     <id>https://fleshkernel.com/sf_15/</id>
     <title>Slow Food - 15</title>
-    <updated>2022-12-06T17:25:46.782477+00:00</updated>
+    <updated>2022-12-23T17:59:38.445244+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/sf/025_0.png' width='940' height='2139' alt='Slow Food - 15'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/sf_15/" rel="alternate"/>
     <published>2019-05-14T21:42:00+00:00</published>
@@ -345,7 +353,7 @@
   <entry>
     <id>https://fleshkernel.com/sf_14/</id>
     <title>Slow Food - 14</title>
-    <updated>2022-12-06T17:25:46.782477+00:00</updated>
+    <updated>2022-12-23T17:59:38.445244+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/sf/023.png' width='940' height='3760' alt='Slow Food - 14'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/sf_14/" rel="alternate"/>
     <published>2019-05-05T19:24:00+00:00</published>
@@ -353,7 +361,7 @@
   <entry>
     <id>https://fleshkernel.com/sf_13/</id>
     <title>Slow Food - 13</title>
-    <updated>2022-12-06T17:25:46.782477+00:00</updated>
+    <updated>2022-12-23T17:59:38.445244+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/sf/021_022_0.png' width='940' height='1927' alt='Slow Food - 13'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/sf_13/" rel="alternate"/>
     <published>2019-04-26T17:06:00+00:00</published>
@@ -361,7 +369,7 @@
   <entry>
     <id>https://fleshkernel.com/sf_12/</id>
     <title>Slow Food - 12</title>
-    <updated>2022-12-06T17:25:46.782477+00:00</updated>
+    <updated>2022-12-23T17:59:38.444243+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/sf/019.png' width='940' height='3760' alt='Slow Food - 12'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/sf_12/" rel="alternate"/>
     <published>2019-04-17T14:48:00+00:00</published>
@@ -369,7 +377,7 @@
   <entry>
     <id>https://fleshkernel.com/sf_11/</id>
     <title>Slow Food - 11</title>
-    <updated>2022-12-06T17:25:46.782477+00:00</updated>
+    <updated>2022-12-23T17:59:38.444243+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/sf/017_018_0.png' width='940' height='3643' alt='Slow Food - 11'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/sf_11/" rel="alternate"/>
     <published>2019-04-08T12:30:00+00:00</published>
@@ -377,7 +385,7 @@
   <entry>
     <id>https://fleshkernel.com/sf_10/</id>
     <title>Slow Food - 10</title>
-    <updated>2022-12-06T17:25:46.782477+00:00</updated>
+    <updated>2022-12-23T17:59:38.444243+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/sf/016.png' width='940' height='3531' alt='Slow Food - 10'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/sf_10/" rel="alternate"/>
     <published>2019-03-30T09:12:00+00:00</published>
@@ -385,7 +393,7 @@
   <entry>
     <id>https://fleshkernel.com/sf_9/</id>
     <title>Slow Food - 9</title>
-    <updated>2022-12-06T17:25:46.781477+00:00</updated>
+    <updated>2022-12-23T17:59:38.444243+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/sf/015_0.png' width='940' height='2037' alt='Slow Food - 9'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/sf_9/" rel="alternate"/>
     <published>2019-03-21T06:54:00+00:00</published>
@@ -393,7 +401,7 @@
   <entry>
     <id>https://fleshkernel.com/sf_8/</id>
     <title>Slow Food - 8</title>
-    <updated>2022-12-06T17:25:46.781477+00:00</updated>
+    <updated>2022-12-23T17:59:38.444243+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/sf/012.png' width='940' height='3290' alt='Slow Food - 8'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/sf_8/" rel="alternate"/>
     <published>2019-03-12T04:36:00+00:00</published>
@@ -401,7 +409,7 @@
   <entry>
     <id>https://fleshkernel.com/as2/</id>
     <title>Slow Food - Intermezzo: Alleyway Stickup</title>
-    <updated>2022-12-06T17:25:46.781477+00:00</updated>
+    <updated>2022-12-23T17:59:38.444243+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/as/tapas_0.png' width='940' height='2823' alt='Slow Food - Intermezzo: Alleyway Stickup'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/as2/" rel="alternate"/>
     <published>2019-03-03T02:18:00+00:00</published>
@@ -409,7 +417,7 @@
   <entry>
     <id>https://fleshkernel.com/sf_7/</id>
     <title>Slow Food - 7</title>
-    <updated>2022-12-06T17:25:46.781477+00:00</updated>
+    <updated>2022-12-23T17:59:38.444243+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/sf/010.png' width='940' height='4132' alt='Slow Food - 7'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/sf_7/" rel="alternate"/>
     <published>2019-02-22T00:00:00+00:00</published>
@@ -417,7 +425,7 @@
   <entry>
     <id>https://fleshkernel.com/sf_6/</id>
     <title>Slow Food - 6</title>
-    <updated>2022-12-06T17:25:46.781477+00:00</updated>
+    <updated>2022-12-23T17:59:38.443254+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/sf/009_0.png' width='940' height='1225' alt='Slow Food - 6'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/sf_6/" rel="alternate"/>
     <published>2019-02-16T00:00:00+00:00</published>
@@ -425,7 +433,7 @@
   <entry>
     <id>https://fleshkernel.com/sf_5/</id>
     <title>Slow Food - 5</title>
-    <updated>2022-12-06T17:25:46.781477+00:00</updated>
+    <updated>2022-12-23T17:59:38.443254+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/sf/008_0.png' width='940' height='2115' alt='Slow Food - 5'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/sf_5/" rel="alternate"/>
     <published>2019-02-10T00:00:00+00:00</published>
@@ -433,7 +441,7 @@
   <entry>
     <id>https://fleshkernel.com/sf_4/</id>
     <title>Slow Food - 4</title>
-    <updated>2022-12-06T17:25:46.780476+00:00</updated>
+    <updated>2022-12-23T17:59:38.443254+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/sf/007.png' width='940' height='3760' alt='Slow Food - 4'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/sf_4/" rel="alternate"/>
     <published>2019-02-04T00:00:00+00:00</published>
@@ -441,7 +449,7 @@
   <entry>
     <id>https://fleshkernel.com/sf_3/</id>
     <title>Slow Food - 3</title>
-    <updated>2022-12-06T17:25:46.780476+00:00</updated>
+    <updated>2022-12-23T17:59:38.443254+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/sf/006.png' width='940' height='3290' alt='Slow Food - 3'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/sf_3/" rel="alternate"/>
     <published>2019-01-29T00:00:00+00:00</published>
@@ -449,7 +457,7 @@
   <entry>
     <id>https://fleshkernel.com/sf_2/</id>
     <title>Slow Food - 2</title>
-    <updated>2022-12-06T17:25:46.780476+00:00</updated>
+    <updated>2022-12-23T17:59:38.443254+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/sf/001.png' width='940' height='987' alt='Slow Food - 2'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/sf_2/" rel="alternate"/>
     <published>2019-01-23T00:00:00+00:00</published>
@@ -457,7 +465,7 @@
   <entry>
     <id>https://fleshkernel.com/sf_1/</id>
     <title>Slow Food - 1</title>
-    <updated>2022-12-06T17:25:46.780476+00:00</updated>
+    <updated>2022-12-23T17:59:38.442242+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/sf/000.png' width='940' height='2600' alt='Slow Food - 1'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/sf_1/" rel="alternate"/>
     <published>2019-01-17T00:00:00+00:00</published>
@@ -465,7 +473,7 @@
   <entry>
     <id>https://fleshkernel.com/sf_tc/</id>
     <title>Slow Food - Title Card</title>
-    <updated>2022-12-06T17:25:46.780476+00:00</updated>
+    <updated>2022-12-23T17:59:38.442242+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/sf/big_tc_sf.webp' width='940' height='940' alt='Slow Food - Title Card'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/sf_tc/" rel="alternate"/>
     <published>2019-01-11T00:00:00+00:00</published>
@@ -473,7 +481,7 @@
   <entry>
     <id>https://fleshkernel.com/bp2/</id>
     <title>Road Trip - Backpack</title>
-    <updated>2022-12-06T17:25:46.780476+00:00</updated>
+    <updated>2022-12-23T17:59:38.442242+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/bp/tc_fat.png' width='940' height='940' alt='Road Trip - Backpack'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/bp2/" rel="alternate"/>
     <published>2019-01-04T00:00:00+00:00</published>
@@ -481,7 +489,7 @@
   <entry>
     <id>https://fleshkernel.com/gss/#gss</id>
     <title>Road Trip - Gods of the Solar System</title>
-    <updated>2022-12-06T17:25:46.779475+00:00</updated>
+    <updated>2022-12-23T17:59:38.442242+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/gss/000gnrth.png' width='940' height='1567' alt='Road Trip - Gods of the Solar System'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/gss/#gss" rel="alternate"/>
     <published>2018-12-28T00:00:00+00:00</published>
@@ -489,7 +497,7 @@
   <entry>
     <id>https://fleshkernel.com/rt_8/</id>
     <title>Road Trip - 8</title>
-    <updated>2022-12-06T17:25:46.779475+00:00</updated>
+    <updated>2022-12-23T17:59:38.442242+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/rt/052.png' width='940' height='940' alt='Road Trip - 8'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/rt_8/" rel="alternate"/>
     <published>2018-12-21T00:00:00+00:00</published>
@@ -497,7 +505,7 @@
   <entry>
     <id>https://fleshkernel.com/rt_7/</id>
     <title>Road Trip - 7</title>
-    <updated>2022-12-06T17:25:46.779475+00:00</updated>
+    <updated>2022-12-23T17:59:38.442242+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/rt/040.png' width='940' height='940' alt='Road Trip - 7'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/rt_7/" rel="alternate"/>
     <published>2018-12-15T00:00:00+00:00</published>
@@ -505,7 +513,7 @@
   <entry>
     <id>https://fleshkernel.com/rt_6/</id>
     <title>Road Trip - 6</title>
-    <updated>2022-12-06T17:25:46.779475+00:00</updated>
+    <updated>2022-12-23T17:59:38.442242+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/rt/034.png' width='940' height='1880' alt='Road Trip - 6'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/rt_6/" rel="alternate"/>
     <published>2018-12-09T00:00:00+00:00</published>
@@ -513,7 +521,7 @@
   <entry>
     <id>https://fleshkernel.com/rt_5/</id>
     <title>Road Trip - 5</title>
-    <updated>2022-12-06T17:25:46.779475+00:00</updated>
+    <updated>2022-12-23T17:59:38.441240+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/rt/028.png' width='940' height='940' alt='Road Trip - 5'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/rt_5/" rel="alternate"/>
     <published>2018-12-03T00:00:00+00:00</published>
@@ -521,7 +529,7 @@
   <entry>
     <id>https://fleshkernel.com/rt_4/</id>
     <title>Road Trip - 4</title>
-    <updated>2022-12-06T17:25:46.779475+00:00</updated>
+    <updated>2022-12-23T17:59:38.441240+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/rt/022.png' width='940' height='940' alt='Road Trip - 4'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/rt_4/" rel="alternate"/>
     <published>2018-11-27T00:00:00+00:00</published>
@@ -529,7 +537,7 @@
   <entry>
     <id>https://fleshkernel.com/rt_3/</id>
     <title>Road Trip - 3</title>
-    <updated>2022-12-06T17:25:46.778475+00:00</updated>
+    <updated>2022-12-23T17:59:38.441240+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/rt/017.png' width='940' height='940' alt='Road Trip - 3'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/rt_3/" rel="alternate"/>
     <published>2018-11-21T00:00:00+00:00</published>
@@ -537,7 +545,7 @@
   <entry>
     <id>https://fleshkernel.com/rt_2/</id>
     <title>Road Trip - 2</title>
-    <updated>2022-12-06T17:25:46.778475+00:00</updated>
+    <updated>2022-12-23T17:59:38.441240+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/rt/009.png' width='940' height='940' alt='Road Trip - 2'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/rt_2/" rel="alternate"/>
     <published>2018-11-15T00:00:00+00:00</published>
@@ -545,7 +553,7 @@
   <entry>
     <id>https://fleshkernel.com/rt_1/</id>
     <title>Road Trip - 1</title>
-    <updated>2022-12-06T17:25:46.778475+00:00</updated>
+    <updated>2022-12-23T17:59:38.441240+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/rt/000.png' width='940' height='940' alt='Road Trip - 1'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/rt_1/" rel="alternate"/>
     <published>2018-11-09T00:00:00+00:00</published>
@@ -553,7 +561,7 @@
   <entry>
     <id>https://fleshkernel.com/rt_tc/</id>
     <title>Road Trip - Title Card</title>
-    <updated>2022-12-06T17:25:46.778475+00:00</updated>
+    <updated>2022-12-23T17:59:38.441240+00:00</updated>
     <content>&lt;img src='https://fleshkernel.com/_assets/rt/big_tc_rt.webp' width='940' height='940' alt='Road Trip - Title Card'&gt;&lt;/hr&gt;</content>
     <link href="https://fleshkernel.com/rt_tc/" rel="alternate"/>
     <published>2018-11-03T00:00:00+00:00</published>
