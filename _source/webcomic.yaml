@@ -392,3 +392,7 @@ root:
               pix: bitchesbrew_007.webp
               date: Dec 23, 2022
               description: Ho ho ho, Merry Christmas, etc etc
+            bb_4:
+              title: "4"
+              pix: bitchesbrew_[008-010].png
+              description: Big update.

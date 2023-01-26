@@ -6,7 +6,14 @@
     <description>Flesh Kernel is a weird webcomic by cancrizans canon about aliens, gods and madness in the 24th century.</description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
-    <lastBuildDate>Fri, 23 Dec 2022 17:59:38 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Jan 2023 17:59:38 +0000</lastBuildDate>
+    <item>
+      <title>Bitches Brew - 4</title>
+      <link>https://fleshkernel.com/bb_4/</link>
+      <description>&lt;img src='https://fleshkernel.com/_assets/bb/bitchesbrew_008.png' width='940' height='1692' alt='Bitches Brew - 4'&gt;&lt;/hr&gt;&lt;p&gt;Big update.&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://fleshkernel.com/bb_4/</guid>
+      <pubDate>Fri, 23 Dec 2022 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Bitches Brew - 3</title>
       <link>https://fleshkernel.com/bb_3/</link>
