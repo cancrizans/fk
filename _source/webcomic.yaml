@@ -6,7 +6,7 @@ hierarchy:
   webcomic:
     layout: gallery
     list_in_toc: no
-    comments: yes
+    # comments: yes
     
   chapter:
     layout: trickle
@@ -17,7 +17,7 @@ hierarchy:
     banner: banner_recolour.gif
     layout: scroll
     list_in_toc: no
-    comments: yes
+    # comments: yes
     
 
   update:
@@ -44,8 +44,8 @@ feed:
 google.analytics:
   tracking_id: UA-163492573-1 # please don't copy this. This is for Flesh Kernel.
 
-cactus:
-  site_name: fleshkernel
+# cactus:
+#   site_name: fleshkernel
 
 
 
